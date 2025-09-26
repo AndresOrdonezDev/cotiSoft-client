@@ -1,0 +1,134 @@
+[
+  {
+    "department": "ANTIOQUIA",
+    "code": "05"
+  },
+  {
+    "department": "ATLANTICO",
+    "code": "08"
+  },
+  {
+    "department": "BOGOTA",
+    "code": "11"
+  },
+  {
+    "department": "BOLIVAR",
+    "code": "13"
+  },
+  {
+    "department": "BOYACA",
+    "code": "15"
+  },
+  {
+    "department": "CALDAS",
+    "code": "17"
+  },
+  {
+    "department": "CAQUETA",
+    "code": "18"
+  },
+  {
+    "department": "CAUCA",
+    "code": "19"
+  },
+  {
+    "department": "CESAR",
+    "code": "20"
+  },
+  {
+    "department": "CORDOBA",
+    "code": "23"
+  },
+  {
+    "department": "CUNDINAMARCA",
+    "code": "25"
+  },
+  {
+    "department": "CHOCO",
+    "code": "27"
+  },
+  {
+    "department": "HUILA",
+    "code": "41"
+  },
+  {
+    "department": "LA GUAJIRA",
+    "code": "44"
+  },
+  {
+    "department": "MAGDALENA",
+    "code": "47"
+  },
+  {
+    "department": "META",
+    "code": "50"
+  },
+  {
+    "department": "NARIÑO",
+    "code": "52"
+  },
+  {
+    "department": "N. DE SANTANDER",
+    "code": "54"
+  },
+  {
+    "department": "QUINDIO",
+    "code": "63"
+  },
+  {
+    "department": "RISARALDA",
+    "code": "66"
+  },
+  {
+    "department": "SANTANDER",
+    "code": "68"
+  },
+  {
+    "department": "SUCRE",
+    "code": "70"
+  },
+  {
+    "department": "TOLIMA",
+    "code": "73"
+  },
+  {
+    "department": "VALLE DEL CAUCA",
+    "code": "76"
+  },
+  {
+    "department": "ARAUCA",
+    "code": "81"
+  },
+  {
+    "department": "CASANARE",
+    "code": "85"
+  },
+  {
+    "department": "PUTUMAYO",
+    "code": "86"
+  },
+  {
+    "department": "SAN ANDRES",
+    "code": "88"
+  },
+  {
+    "department": "AMAZONAS",
+    "code": "91"
+  },
+  {
+    "department": "GUAINIA",
+    "code": "94"
+  },
+  {
+    "department": "GUAVIARE",
+    "code": "95"
+  },
+  {
+    "department": "VAUPES",
+    "code": "97"
+  },
+  {
+    "department": "VICHADA",
+    "code": "99"
+  }
+]

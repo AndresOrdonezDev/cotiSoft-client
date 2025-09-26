@@ -1,0 +1,5602 @@
+[
+  {
+    "city": "MEDELLIN",
+    "code": "001",
+    "department": "05"
+  },
+  {
+    "city": "ABEJORRAL",
+    "code": "002",
+    "department": "05"
+  },
+  {
+    "city": "ABRIAQUI",
+    "code": "004",
+    "department": "05"
+  },
+  {
+    "city": "ALEJANDRIA",
+    "code": "021",
+    "department": "05"
+  },
+  {
+    "city": "AMAGA",
+    "code": "030",
+    "department": "05"
+  },
+  {
+    "city": "AMALFI",
+    "code": "031",
+    "department": "05"
+  },
+  {
+    "city": "ANDES",
+    "code": "034",
+    "department": "05"
+  },
+  {
+    "city": "ANGELOPOLIS",
+    "code": "036",
+    "department": "05"
+  },
+  {
+    "city": "ANGOSTURA",
+    "code": "038",
+    "department": "05"
+  },
+  {
+    "city": "ANORI",
+    "code": "040",
+    "department": "05"
+  },
+  {
+    "city": "SANTAFE DE ANTIOQUIA",
+    "code": "042",
+    "department": "05"
+  },
+  {
+    "city": "ANZA",
+    "code": "044",
+    "department": "05"
+  },
+  {
+    "city": "APARTADO",
+    "code": "045",
+    "department": "05"
+  },
+  {
+    "city": "ARBOLETES",
+    "code": "051",
+    "department": "05"
+  },
+  {
+    "city": "ARGELIA",
+    "code": "055",
+    "department": "05"
+  },
+  {
+    "city": "ARMENIA",
+    "code": "059",
+    "department": "05"
+  },
+  {
+    "city": "BARBOSA",
+    "code": "079",
+    "department": "05"
+  },
+  {
+    "city": "BELMIRA",
+    "code": "086",
+    "department": "05"
+  },
+  {
+    "city": "BELLO",
+    "code": "088",
+    "department": "05"
+  },
+  {
+    "city": "BETANIA",
+    "code": "091",
+    "department": "05"
+  },
+  {
+    "city": "BETULIA",
+    "code": "093",
+    "department": "05"
+  },
+  {
+    "city": "CIUDAD BOLIVAR",
+    "code": "101",
+    "department": "05"
+  },
+  {
+    "city": "BRICEÑO",
+    "code": "107",
+    "department": "05"
+  },
+  {
+    "city": "BURITICA",
+    "code": "113",
+    "department": "05"
+  },
+  {
+    "city": "CACERES",
+    "code": "120",
+    "department": "05"
+  },
+  {
+    "city": "CAICEDO",
+    "code": "125",
+    "department": "05"
+  },
+  {
+    "city": "CALDAS",
+    "code": "129",
+    "department": "05"
+  },
+  {
+    "city": "CAMPAMENTO",
+    "code": "134",
+    "department": "05"
+  },
+  {
+    "city": "CAÑASGORDAS",
+    "code": "138",
+    "department": "05"
+  },
+  {
+    "city": "CARACOLI",
+    "code": "142",
+    "department": "05"
+  },
+  {
+    "city": "CARAMANTA",
+    "code": "145",
+    "department": "05"
+  },
+  {
+    "city": "CAREPA",
+    "code": "147",
+    "department": "05"
+  },
+  {
+    "city": "EL CARMEN DE VIBORAL",
+    "code": "148",
+    "department": "05"
+  },
+  {
+    "city": "CAROLINA",
+    "code": "150",
+    "department": "05"
+  },
+  {
+    "city": "CAUCASIA",
+    "code": "154",
+    "department": "05"
+  },
+  {
+    "city": "CHIGORODO",
+    "code": "172",
+    "department": "05"
+  },
+  {
+    "city": "CISNEROS",
+    "code": "190",
+    "department": "05"
+  },
+  {
+    "city": "COCORNA",
+    "code": "197",
+    "department": "05"
+  },
+  {
+    "city": "CONCEPCION",
+    "code": "206",
+    "department": "05"
+  },
+  {
+    "city": "CONCORDIA",
+    "code": "209",
+    "department": "05"
+  },
+  {
+    "city": "COPACABANA",
+    "code": "212",
+    "department": "05"
+  },
+  {
+    "city": "DABEIBA",
+    "code": "234",
+    "department": "05"
+  },
+  {
+    "city": "DON MATIAS",
+    "code": "237",
+    "department": "05"
+  },
+  {
+    "city": "EBEJICO",
+    "code": "240",
+    "department": "05"
+  },
+  {
+    "city": "EL BAGRE",
+    "code": "250",
+    "department": "05"
+  },
+  {
+    "city": "ENTRERRIOS",
+    "code": "264",
+    "department": "05"
+  },
+  {
+    "city": "ENVIGADO",
+    "code": "266",
+    "department": "05"
+  },
+  {
+    "city": "FREDONIA",
+    "code": "282",
+    "department": "05"
+  },
+  {
+    "city": "FRONTINO",
+    "code": "284",
+    "department": "05"
+  },
+  {
+    "city": "GIRALDO",
+    "code": "306",
+    "department": "05"
+  },
+  {
+    "city": "GIRARDOTA",
+    "code": "308",
+    "department": "05"
+  },
+  {
+    "city": "GOMEZ PLATA",
+    "code": "310",
+    "department": "05"
+  },
+  {
+    "city": "GRANADA",
+    "code": "313",
+    "department": "05"
+  },
+  {
+    "city": "GUADALUPE",
+    "code": "315",
+    "department": "05"
+  },
+  {
+    "city": "GUARNE",
+    "code": "318",
+    "department": "05"
+  },
+  {
+    "city": "GUATAPE",
+    "code": "321",
+    "department": "05"
+  },
+  {
+    "city": "HELICONIA",
+    "code": "347",
+    "department": "05"
+  },
+  {
+    "city": "HISPANIA",
+    "code": "353",
+    "department": "05"
+  },
+  {
+    "city": "ITAGUI",
+    "code": "360",
+    "department": "05"
+  },
+  {
+    "city": "ITUANGO",
+    "code": "361",
+    "department": "05"
+  },
+  {
+    "city": "JARDIN",
+    "code": "364",
+    "department": "05"
+  },
+  {
+    "city": "JERICO",
+    "code": "368",
+    "department": "05"
+  },
+  {
+    "city": "LA CEJA",
+    "code": "376",
+    "department": "05"
+  },
+  {
+    "city": "LA ESTRELLA",
+    "code": "380",
+    "department": "05"
+  },
+  {
+    "city": "LA PINTADA",
+    "code": "390",
+    "department": "05"
+  },
+  {
+    "city": "LA UNION",
+    "code": "400",
+    "department": "05"
+  },
+  {
+    "city": "LIBORINA",
+    "code": "411",
+    "department": "05"
+  },
+  {
+    "city": "MACEO",
+    "code": "425",
+    "department": "05"
+  },
+  {
+    "city": "MARINILLA",
+    "code": "440",
+    "department": "05"
+  },
+  {
+    "city": "MONTEBELLO",
+    "code": "467",
+    "department": "05"
+  },
+  {
+    "city": "MURINDO",
+    "code": "475",
+    "department": "05"
+  },
+  {
+    "city": "MUTATA",
+    "code": "480",
+    "department": "05"
+  },
+  {
+    "city": "NARIÑO",
+    "code": "483",
+    "department": "05"
+  },
+  {
+    "city": "NECOCLI",
+    "code": "490",
+    "department": "05"
+  },
+  {
+    "city": "NECHI",
+    "code": "495",
+    "department": "05"
+  },
+  {
+    "city": "OLAYA",
+    "code": "501",
+    "department": "05"
+  },
+  {
+    "city": "PEÑOL",
+    "code": "541",
+    "department": "05"
+  },
+  {
+    "city": "PEQUE",
+    "code": "543",
+    "department": "05"
+  },
+  {
+    "city": "PUEBLORRICO",
+    "code": "576",
+    "department": "05"
+  },
+  {
+    "city": "PUERTO BERRIO",
+    "code": "579",
+    "department": "05"
+  },
+  {
+    "city": "PUERTO NARE",
+    "code": "585",
+    "department": "05"
+  },
+  {
+    "city": "PUERTO TRIUNFO",
+    "code": "591",
+    "department": "05"
+  },
+  {
+    "city": "REMEDIOS",
+    "code": "604",
+    "department": "05"
+  },
+  {
+    "city": "RETIRO",
+    "code": "607",
+    "department": "05"
+  },
+  {
+    "city": "RIONEGRO",
+    "code": "615",
+    "department": "05"
+  },
+  {
+    "city": "SABANALARGA",
+    "code": "628",
+    "department": "05"
+  },
+  {
+    "city": "SABANETA",
+    "code": "631",
+    "department": "05"
+  },
+  {
+    "city": "SALGAR",
+    "code": "642",
+    "department": "05"
+  },
+  {
+    "city": "SAN ANDRES DE CUERQUIA",
+    "code": "647",
+    "department": "05"
+  },
+  {
+    "city": "SAN CARLOS",
+    "code": "649",
+    "department": "05"
+  },
+  {
+    "city": "SAN FRANCISCO",
+    "code": "652",
+    "department": "05"
+  },
+  {
+    "city": "SAN JERONIMO",
+    "code": "656",
+    "department": "05"
+  },
+  {
+    "city": "SAN JOSE DE LA MONTAÑA",
+    "code": "658",
+    "department": "05"
+  },
+  {
+    "city": "SAN JUAN DE URABA",
+    "code": "659",
+    "department": "05"
+  },
+  {
+    "city": "SAN LUIS",
+    "code": "660",
+    "department": "05"
+  },
+  {
+    "city": "SAN PEDRO",
+    "code": "664",
+    "department": "05"
+  },
+  {
+    "city": "SAN PEDRO DE URABA",
+    "code": "665",
+    "department": "05"
+  },
+  {
+    "city": "SAN RAFAEL",
+    "code": "667",
+    "department": "05"
+  },
+  {
+    "city": "SAN ROQUE",
+    "code": "670",
+    "department": "05"
+  },
+  {
+    "city": "SAN VICENTE",
+    "code": "674",
+    "department": "05"
+  },
+  {
+    "city": "SANTA BARBARA",
+    "code": "679",
+    "department": "05"
+  },
+  {
+    "city": "SANTA ROSA DE OSOS",
+    "code": "686",
+    "department": "05"
+  },
+  {
+    "city": "SANTO DOMINGO",
+    "code": "690",
+    "department": "05"
+  },
+  {
+    "city": "EL SANTUARIO",
+    "code": "697",
+    "department": "05"
+  },
+  {
+    "city": "SEGOVIA",
+    "code": "736",
+    "department": "05"
+  },
+  {
+    "city": "SONSON",
+    "code": "756",
+    "department": "05"
+  },
+  {
+    "city": "SOPETRAN",
+    "code": "761",
+    "department": "05"
+  },
+  {
+    "city": "TAMESIS",
+    "code": "789",
+    "department": "05"
+  },
+  {
+    "city": "TARAZA",
+    "code": "790",
+    "department": "05"
+  },
+  {
+    "city": "TARSO",
+    "code": "792",
+    "department": "05"
+  },
+  {
+    "city": "TITIRIBI",
+    "code": "809",
+    "department": "05"
+  },
+  {
+    "city": "TOLEDO",
+    "code": "819",
+    "department": "05"
+  },
+  {
+    "city": "TURBO",
+    "code": "837",
+    "department": "05"
+  },
+  {
+    "city": "URAMITA",
+    "code": "842",
+    "department": "05"
+  },
+  {
+    "city": "URRAO",
+    "code": "847",
+    "department": "05"
+  },
+  {
+    "city": "VALDIVIA",
+    "code": "854",
+    "department": "05"
+  },
+  {
+    "city": "VALPARAISO",
+    "code": "856",
+    "department": "05"
+  },
+  {
+    "city": "VEGACHI",
+    "code": "858",
+    "department": "05"
+  },
+  {
+    "city": "VENECIA",
+    "code": "861",
+    "department": "05"
+  },
+  {
+    "city": "VIGIA DEL FUERTE",
+    "code": "873",
+    "department": "05"
+  },
+  {
+    "city": "YALI",
+    "code": "885",
+    "department": "05"
+  },
+  {
+    "city": "YARUMAL",
+    "code": "887",
+    "department": "05"
+  },
+  {
+    "city": "YOLOMBO",
+    "code": "890",
+    "department": "05"
+  },
+  {
+    "city": "YONDO",
+    "code": "893",
+    "department": "05"
+  },
+  {
+    "city": "ZARAGOZA",
+    "code": "895",
+    "department": "05"
+  },
+  {
+    "city": "BARRANQUILLA",
+    "code": "001",
+    "department": "08"
+  },
+  {
+    "city": "BARANOA",
+    "code": "078",
+    "department": "08"
+  },
+  {
+    "city": "CAMPO DE LA CRUZ",
+    "code": "137",
+    "department": "08"
+  },
+  {
+    "city": "CANDELARIA",
+    "code": "141",
+    "department": "08"
+  },
+  {
+    "city": "GALAPA",
+    "code": "296",
+    "department": "08"
+  },
+  {
+    "city": "JUAN DE ACOSTA",
+    "code": "372",
+    "department": "08"
+  },
+  {
+    "city": "LURUACO",
+    "code": "421",
+    "department": "08"
+  },
+  {
+    "city": "MALAMBO",
+    "code": "433",
+    "department": "08"
+  },
+  {
+    "city": "MANATI",
+    "code": "436",
+    "department": "08"
+  },
+  {
+    "city": "PALMAR DE VARELA",
+    "code": "520",
+    "department": "08"
+  },
+  {
+    "city": "PIOJO",
+    "code": "549",
+    "department": "08"
+  },
+  {
+    "city": "POLONUEVO",
+    "code": "558",
+    "department": "08"
+  },
+  {
+    "city": "PONEDERA",
+    "code": "560",
+    "department": "08"
+  },
+  {
+    "city": "PUERTO COLOMBIA",
+    "code": "573",
+    "department": "08"
+  },
+  {
+    "city": "REPELON",
+    "code": "606",
+    "department": "08"
+  },
+  {
+    "city": "SABANAGRANDE",
+    "code": "634",
+    "department": "08"
+  },
+  {
+    "city": "SABANALARGA",
+    "code": "638",
+    "department": "08"
+  },
+  {
+    "city": "SANTA LUCIA",
+    "code": "675",
+    "department": "08"
+  },
+  {
+    "city": "SANTO TOMAS",
+    "code": "685",
+    "department": "08"
+  },
+  {
+    "city": "SOLEDAD",
+    "code": "758",
+    "department": "08"
+  },
+  {
+    "city": "SUAN",
+    "code": "770",
+    "department": "08"
+  },
+  {
+    "city": "TUBARA",
+    "code": "832",
+    "department": "08"
+  },
+  {
+    "city": "USIACURI",
+    "code": "849",
+    "department": "08"
+  },
+  {
+    "city": "BOGOTA, D.C.",
+    "code": "001",
+    "department": "11"
+  },
+  {
+    "city": "CARTAGENA",
+    "code": "001",
+    "department": "13"
+  },
+  {
+    "city": "ACHI",
+    "code": "006",
+    "department": "13"
+  },
+  {
+    "city": "ALTOS DEL ROSARIO",
+    "code": "030",
+    "department": "13"
+  },
+  {
+    "city": "ARENAL",
+    "code": "042",
+    "department": "13"
+  },
+  {
+    "city": "ARJONA",
+    "code": "052",
+    "department": "13"
+  },
+  {
+    "city": "ARROYOHONDO",
+    "code": "062",
+    "department": "13"
+  },
+  {
+    "city": "BARRANCO DE LOBA",
+    "code": "074",
+    "department": "13"
+  },
+  {
+    "city": "CALAMAR",
+    "code": "140",
+    "department": "13"
+  },
+  {
+    "city": "CANTAGALLO",
+    "code": "160",
+    "department": "13"
+  },
+  {
+    "city": "CICUCO",
+    "code": "188",
+    "department": "13"
+  },
+  {
+    "city": "CORDOBA",
+    "code": "212",
+    "department": "13"
+  },
+  {
+    "city": "CLEMENCIA",
+    "code": "222",
+    "department": "13"
+  },
+  {
+    "city": "EL CARMEN DE BOLIVAR",
+    "code": "244",
+    "department": "13"
+  },
+  {
+    "city": "EL GUAMO",
+    "code": "248",
+    "department": "13"
+  },
+  {
+    "city": "EL PEÑON",
+    "code": "268",
+    "department": "13"
+  },
+  {
+    "city": "HATILLO DE LOBA",
+    "code": "300",
+    "department": "13"
+  },
+  {
+    "city": "MAGANGUE",
+    "code": "430",
+    "department": "13"
+  },
+  {
+    "city": "MAHATES",
+    "code": "433",
+    "department": "13"
+  },
+  {
+    "city": "MARGARITA",
+    "code": "440",
+    "department": "13"
+  },
+  {
+    "city": "MARIA LA BAJA",
+    "code": "442",
+    "department": "13"
+  },
+  {
+    "city": "MONTECRISTO",
+    "code": "458",
+    "department": "13"
+  },
+  {
+    "city": "MOMPOS",
+    "code": "468",
+    "department": "13"
+  },
+  {
+    "city": "NOROSI",
+    "code": "490",
+    "department": "13"
+  },
+  {
+    "city": "MORALES",
+    "code": "473",
+    "department": "13"
+  },
+  {
+    "city": "PINILLOS",
+    "code": "549",
+    "department": "13"
+  },
+  {
+    "city": "REGIDOR",
+    "code": "580",
+    "department": "13"
+  },
+  {
+    "city": "RIO VIEJO",
+    "code": "600",
+    "department": "13"
+  },
+  {
+    "city": "SAN CRISTOBAL",
+    "code": "620",
+    "department": "13"
+  },
+  {
+    "city": "SAN ESTANISLAO",
+    "code": "647",
+    "department": "13"
+  },
+  {
+    "city": "SAN FERNANDO",
+    "code": "650",
+    "department": "13"
+  },
+  {
+    "city": "SAN JACINTO",
+    "code": "654",
+    "department": "13"
+  },
+  {
+    "city": "SAN JACINTO DEL CAUCA",
+    "code": "655",
+    "department": "13"
+  },
+  {
+    "city": "SAN JUAN NEPOMUCENO",
+    "code": "657",
+    "department": "13"
+  },
+  {
+    "city": "SAN MARTIN DE LOBA",
+    "code": "667",
+    "department": "13"
+  },
+  {
+    "city": "SAN PABLO",
+    "code": "670",
+    "department": "13"
+  },
+  {
+    "city": "SANTA CATALINA",
+    "code": "673",
+    "department": "13"
+  },
+  {
+    "city": "SANTA ROSA",
+    "code": "683",
+    "department": "13"
+  },
+  {
+    "city": "SANTA ROSA DEL SUR",
+    "code": "688",
+    "department": "13"
+  },
+  {
+    "city": "SIMITI",
+    "code": "744",
+    "department": "13"
+  },
+  {
+    "city": "SOPLAVIENTO",
+    "code": "760",
+    "department": "13"
+  },
+  {
+    "city": "TALAIGUA NUEVO",
+    "code": "780",
+    "department": "13"
+  },
+  {
+    "city": "TIQUISIO",
+    "code": "810",
+    "department": "13"
+  },
+  {
+    "city": "TURBACO",
+    "code": "836",
+    "department": "13"
+  },
+  {
+    "city": "TURBANA",
+    "code": "838",
+    "department": "13"
+  },
+  {
+    "city": "VILLANUEVA",
+    "code": "873",
+    "department": "13"
+  },
+  {
+    "city": "ZAMBRANO",
+    "code": "894",
+    "department": "13"
+  },
+  {
+    "city": "TUNJA",
+    "code": "001",
+    "department": "15"
+  },
+  {
+    "city": "ALMEIDA",
+    "code": "022",
+    "department": "15"
+  },
+  {
+    "city": "AQUITANIA",
+    "code": "047",
+    "department": "15"
+  },
+  {
+    "city": "ARCABUCO",
+    "code": "051",
+    "department": "15"
+  },
+  {
+    "city": "BELEN",
+    "code": "087",
+    "department": "15"
+  },
+  {
+    "city": "BERBEO",
+    "code": "090",
+    "department": "15"
+  },
+  {
+    "city": "BETEITIVA",
+    "code": "092",
+    "department": "15"
+  },
+  {
+    "city": "BOAVITA",
+    "code": "097",
+    "department": "15"
+  },
+  {
+    "city": "BOYACA",
+    "code": "104",
+    "department": "15"
+  },
+  {
+    "city": "BRICEÑO",
+    "code": "106",
+    "department": "15"
+  },
+  {
+    "city": "BUENAVISTA",
+    "code": "109",
+    "department": "15"
+  },
+  {
+    "city": "BUSBANZA",
+    "code": "114",
+    "department": "15"
+  },
+  {
+    "city": "CALDAS",
+    "code": "131",
+    "department": "15"
+  },
+  {
+    "city": "CAMPOHERMOSO",
+    "code": "135",
+    "department": "15"
+  },
+  {
+    "city": "CERINZA",
+    "code": "162",
+    "department": "15"
+  },
+  {
+    "city": "CHINAVITA",
+    "code": "172",
+    "department": "15"
+  },
+  {
+    "city": "CHIQUINQUIRA",
+    "code": "176",
+    "department": "15"
+  },
+  {
+    "city": "CHISCAS",
+    "code": "180",
+    "department": "15"
+  },
+  {
+    "city": "CHITA",
+    "code": "183",
+    "department": "15"
+  },
+  {
+    "city": "CHITARAQUE",
+    "code": "185",
+    "department": "15"
+  },
+  {
+    "city": "CHIVATA",
+    "code": "187",
+    "department": "15"
+  },
+  {
+    "city": "CIENEGA",
+    "code": "189",
+    "department": "15"
+  },
+  {
+    "city": "COMBITA",
+    "code": "204",
+    "department": "15"
+  },
+  {
+    "city": "COPER",
+    "code": "212",
+    "department": "15"
+  },
+  {
+    "city": "CORRALES",
+    "code": "215",
+    "department": "15"
+  },
+  {
+    "city": "COVARACHIA",
+    "code": "218",
+    "department": "15"
+  },
+  {
+    "city": "CUBARA",
+    "code": "223",
+    "department": "15"
+  },
+  {
+    "city": "CUCAITA",
+    "code": "224",
+    "department": "15"
+  },
+  {
+    "city": "CUITIVA",
+    "code": "226",
+    "department": "15"
+  },
+  {
+    "city": "CHIQUIZA",
+    "code": "232",
+    "department": "15"
+  },
+  {
+    "city": "CHIVOR",
+    "code": "236",
+    "department": "15"
+  },
+  {
+    "city": "DUITAMA",
+    "code": "238",
+    "department": "15"
+  },
+  {
+    "city": "EL COCUY",
+    "code": "244",
+    "department": "15"
+  },
+  {
+    "city": "EL ESPINO",
+    "code": "248",
+    "department": "15"
+  },
+  {
+    "city": "FIRAVITOBA",
+    "code": "272",
+    "department": "15"
+  },
+  {
+    "city": "FLORESTA",
+    "code": "276",
+    "department": "15"
+  },
+  {
+    "city": "GACHANTIVA",
+    "code": "293",
+    "department": "15"
+  },
+  {
+    "city": "GAMEZA",
+    "code": "296",
+    "department": "15"
+  },
+  {
+    "city": "GARAGOA",
+    "code": "299",
+    "department": "15"
+  },
+  {
+    "city": "GUACAMAYAS",
+    "code": "317",
+    "department": "15"
+  },
+  {
+    "city": "GUATEQUE",
+    "code": "322",
+    "department": "15"
+  },
+  {
+    "city": "GUAYATA",
+    "code": "325",
+    "department": "15"
+  },
+  {
+    "city": "GsICAN",
+    "code": "332",
+    "department": "15"
+  },
+  {
+    "city": "IZA",
+    "code": "362",
+    "department": "15"
+  },
+  {
+    "city": "JENESANO",
+    "code": "367",
+    "department": "15"
+  },
+  {
+    "city": "JERICO",
+    "code": "368",
+    "department": "15"
+  },
+  {
+    "city": "LABRANZAGRANDE",
+    "code": "377",
+    "department": "15"
+  },
+  {
+    "city": "LA CAPILLA",
+    "code": "380",
+    "department": "15"
+  },
+  {
+    "city": "LA VICTORIA",
+    "code": "401",
+    "department": "15"
+  },
+  {
+    "city": "LA UVITA",
+    "code": "403",
+    "department": "15"
+  },
+  {
+    "city": "VILLA DE LEYVA",
+    "code": "407",
+    "department": "15"
+  },
+  {
+    "city": "MACANAL",
+    "code": "425",
+    "department": "15"
+  },
+  {
+    "city": "MARIPI",
+    "code": "442",
+    "department": "15"
+  },
+  {
+    "city": "MIRAFLORES",
+    "code": "455",
+    "department": "15"
+  },
+  {
+    "city": "MONGUA",
+    "code": "464",
+    "department": "15"
+  },
+  {
+    "city": "MONGUI",
+    "code": "466",
+    "department": "15"
+  },
+  {
+    "city": "MONIQUIRA",
+    "code": "469",
+    "department": "15"
+  },
+  {
+    "city": "MOTAVITA",
+    "code": "476",
+    "department": "15"
+  },
+  {
+    "city": "MUZO",
+    "code": "480",
+    "department": "15"
+  },
+  {
+    "city": "NOBSA",
+    "code": "491",
+    "department": "15"
+  },
+  {
+    "city": "NUEVO COLON",
+    "code": "494",
+    "department": "15"
+  },
+  {
+    "city": "OICATA",
+    "code": "500",
+    "department": "15"
+  },
+  {
+    "city": "OTANCHE",
+    "code": "507",
+    "department": "15"
+  },
+  {
+    "city": "PACHAVITA",
+    "code": "511",
+    "department": "15"
+  },
+  {
+    "city": "PAEZ",
+    "code": "514",
+    "department": "15"
+  },
+  {
+    "city": "PAIPA",
+    "code": "516",
+    "department": "15"
+  },
+  {
+    "city": "PAJARITO",
+    "code": "518",
+    "department": "15"
+  },
+  {
+    "city": "PANQUEBA",
+    "code": "522",
+    "department": "15"
+  },
+  {
+    "city": "PAUNA",
+    "code": "531",
+    "department": "15"
+  },
+  {
+    "city": "PAYA",
+    "code": "533",
+    "department": "15"
+  },
+  {
+    "city": "PAZ DE RIO",
+    "code": "537",
+    "department": "15"
+  },
+  {
+    "city": "PESCA",
+    "code": "542",
+    "department": "15"
+  },
+  {
+    "city": "PISBA",
+    "code": "550",
+    "department": "15"
+  },
+  {
+    "city": "PUERTO BOYACA",
+    "code": "572",
+    "department": "15"
+  },
+  {
+    "city": "QUIPAMA",
+    "code": "580",
+    "department": "15"
+  },
+  {
+    "city": "RAMIRIQUI",
+    "code": "599",
+    "department": "15"
+  },
+  {
+    "city": "RAQUIRA",
+    "code": "600",
+    "department": "15"
+  },
+  {
+    "city": "RONDON",
+    "code": "621",
+    "department": "15"
+  },
+  {
+    "city": "SABOYA",
+    "code": "632",
+    "department": "15"
+  },
+  {
+    "city": "SACHICA",
+    "code": "638",
+    "department": "15"
+  },
+  {
+    "city": "SAMACA",
+    "code": "646",
+    "department": "15"
+  },
+  {
+    "city": "SAN EDUARDO",
+    "code": "660",
+    "department": "15"
+  },
+  {
+    "city": "SAN JOSE DE PARE",
+    "code": "664",
+    "department": "15"
+  },
+  {
+    "city": "SAN LUIS DE GACENO",
+    "code": "667",
+    "department": "15"
+  },
+  {
+    "city": "SAN MATEO",
+    "code": "673",
+    "department": "15"
+  },
+  {
+    "city": "SAN MIGUEL DE SEMA",
+    "code": "676",
+    "department": "15"
+  },
+  {
+    "city": "SAN PABLO DE BORBUR",
+    "code": "681",
+    "department": "15"
+  },
+  {
+    "city": "SANTANA",
+    "code": "686",
+    "department": "15"
+  },
+  {
+    "city": "SANTA MARIA",
+    "code": "690",
+    "department": "15"
+  },
+  {
+    "city": "SANTA ROSA DE VITERBO",
+    "code": "693",
+    "department": "15"
+  },
+  {
+    "city": "SANTA SOFIA",
+    "code": "696",
+    "department": "15"
+  },
+  {
+    "city": "SATIVANORTE",
+    "code": "720",
+    "department": "15"
+  },
+  {
+    "city": "SATIVASUR",
+    "code": "723",
+    "department": "15"
+  },
+  {
+    "city": "SIACHOQUE",
+    "code": "740",
+    "department": "15"
+  },
+  {
+    "city": "SOATA",
+    "code": "753",
+    "department": "15"
+  },
+  {
+    "city": "SOCOTA",
+    "code": "755",
+    "department": "15"
+  },
+  {
+    "city": "SOCHA",
+    "code": "757",
+    "department": "15"
+  },
+  {
+    "city": "SOGAMOSO",
+    "code": "759",
+    "department": "15"
+  },
+  {
+    "city": "SOMONDOCO",
+    "code": "761",
+    "department": "15"
+  },
+  {
+    "city": "SORA",
+    "code": "762",
+    "department": "15"
+  },
+  {
+    "city": "SOTAQUIRA",
+    "code": "763",
+    "department": "15"
+  },
+  {
+    "city": "SORACA",
+    "code": "764",
+    "department": "15"
+  },
+  {
+    "city": "SUSACON",
+    "code": "774",
+    "department": "15"
+  },
+  {
+    "city": "SUTAMARCHAN",
+    "code": "776",
+    "department": "15"
+  },
+  {
+    "city": "SUTATENZA",
+    "code": "778",
+    "department": "15"
+  },
+  {
+    "city": "TASCO",
+    "code": "790",
+    "department": "15"
+  },
+  {
+    "city": "TENZA",
+    "code": "798",
+    "department": "15"
+  },
+  {
+    "city": "TIBANA",
+    "code": "804",
+    "department": "15"
+  },
+  {
+    "city": "TIBASOSA",
+    "code": "806",
+    "department": "15"
+  },
+  {
+    "city": "TINJACA",
+    "code": "808",
+    "department": "15"
+  },
+  {
+    "city": "TIPACOQUE",
+    "code": "810",
+    "department": "15"
+  },
+  {
+    "city": "TOCA",
+    "code": "814",
+    "department": "15"
+  },
+  {
+    "city": "TOGsI",
+    "code": "816",
+    "department": "15"
+  },
+  {
+    "city": "TOPAGA",
+    "code": "820",
+    "department": "15"
+  },
+  {
+    "city": "TOTA",
+    "code": "822",
+    "department": "15"
+  },
+  {
+    "city": "TUNUNGUA",
+    "code": "832",
+    "department": "15"
+  },
+  {
+    "city": "TURMEQUE",
+    "code": "835",
+    "department": "15"
+  },
+  {
+    "city": "TUTA",
+    "code": "837",
+    "department": "15"
+  },
+  {
+    "city": "TUTAZA",
+    "code": "839",
+    "department": "15"
+  },
+  {
+    "city": "UMBITA",
+    "code": "842",
+    "department": "15"
+  },
+  {
+    "city": "VENTAQUEMADA",
+    "code": "861",
+    "department": "15"
+  },
+  {
+    "city": "VIRACACHA",
+    "code": "879",
+    "department": "15"
+  },
+  {
+    "city": "ZETAQUIRA",
+    "code": "897",
+    "department": "15"
+  },
+  {
+    "city": "MANIZALES",
+    "code": "001",
+    "department": "17"
+  },
+  {
+    "city": "AGUADAS",
+    "code": "013",
+    "department": "17"
+  },
+  {
+    "city": "ANSERMA",
+    "code": "042",
+    "department": "17"
+  },
+  {
+    "city": "ARANZAZU",
+    "code": "050",
+    "department": "17"
+  },
+  {
+    "city": "BELALCAZAR",
+    "code": "088",
+    "department": "17"
+  },
+  {
+    "city": "CHINCHINA",
+    "code": "174",
+    "department": "17"
+  },
+  {
+    "city": "FILADELFIA",
+    "code": "272",
+    "department": "17"
+  },
+  {
+    "city": "LA DORADA",
+    "code": "380",
+    "department": "17"
+  },
+  {
+    "city": "LA MERCED",
+    "code": "388",
+    "department": "17"
+  },
+  {
+    "city": "MANZANARES",
+    "code": "433",
+    "department": "17"
+  },
+  {
+    "city": "MARMATO",
+    "code": "442",
+    "department": "17"
+  },
+  {
+    "city": "MARQUETALIA",
+    "code": "444",
+    "department": "17"
+  },
+  {
+    "city": "MARULANDA",
+    "code": "446",
+    "department": "17"
+  },
+  {
+    "city": "NEIRA",
+    "code": "486",
+    "department": "17"
+  },
+  {
+    "city": "NORCASIA",
+    "code": "495",
+    "department": "17"
+  },
+  {
+    "city": "PACORA",
+    "code": "513",
+    "department": "17"
+  },
+  {
+    "city": "PALESTINA",
+    "code": "524",
+    "department": "17"
+  },
+  {
+    "city": "PENSILVANIA",
+    "code": "541",
+    "department": "17"
+  },
+  {
+    "city": "RIOSUCIO",
+    "code": "614",
+    "department": "17"
+  },
+  {
+    "city": "RISARALDA",
+    "code": "616",
+    "department": "17"
+  },
+  {
+    "city": "SALAMINA",
+    "code": "653",
+    "department": "17"
+  },
+  {
+    "city": "SAMANA",
+    "code": "662",
+    "department": "17"
+  },
+  {
+    "city": "SAN JOSE",
+    "code": "665",
+    "department": "17"
+  },
+  {
+    "city": "SUPIA",
+    "code": "777",
+    "department": "17"
+  },
+  {
+    "city": "VICTORIA",
+    "code": "867",
+    "department": "17"
+  },
+  {
+    "city": "VILLAMARIA",
+    "code": "873",
+    "department": "17"
+  },
+  {
+    "city": "VITERBO",
+    "code": "877",
+    "department": "17"
+  },
+  {
+    "city": "FLORENCIA",
+    "code": "001",
+    "department": "18"
+  },
+  {
+    "city": "ALBANIA",
+    "code": "029",
+    "department": "18"
+  },
+  {
+    "city": "BELEN DE LOS ANDAQUIES",
+    "code": "094",
+    "department": "18"
+  },
+  {
+    "city": "CARTAGENA DEL CHAIRA",
+    "code": "150",
+    "department": "18"
+  },
+  {
+    "city": "CURILLO",
+    "code": "205",
+    "department": "18"
+  },
+  {
+    "city": "EL DONCELLO",
+    "code": "247",
+    "department": "18"
+  },
+  {
+    "city": "EL PAUJIL",
+    "code": "256",
+    "department": "18"
+  },
+  {
+    "city": "LA MONTAÑITA",
+    "code": "410",
+    "department": "18"
+  },
+  {
+    "city": "MILAN",
+    "code": "460",
+    "department": "18"
+  },
+  {
+    "city": "MORELIA",
+    "code": "479",
+    "department": "18"
+  },
+  {
+    "city": "PUERTO RICO",
+    "code": "592",
+    "department": "18"
+  },
+  {
+    "city": "SAN JOSE DEL FRAGUA",
+    "code": "610",
+    "department": "18"
+  },
+  {
+    "city": "SAN VICENTE DEL CAGUAN",
+    "code": "753",
+    "department": "18"
+  },
+  {
+    "city": "SOLANO",
+    "code": "756",
+    "department": "18"
+  },
+  {
+    "city": "SOLITA",
+    "code": "785",
+    "department": "18"
+  },
+  {
+    "city": "VALPARAISO",
+    "code": "860",
+    "department": "18"
+  },
+  {
+    "city": "POPAYAN",
+    "code": "001",
+    "department": "19"
+  },
+  {
+    "city": "ALMAGUER",
+    "code": "022",
+    "department": "19"
+  },
+  {
+    "city": "ARGELIA",
+    "code": "050",
+    "department": "19"
+  },
+  {
+    "city": "BALBOA",
+    "code": "075",
+    "department": "19"
+  },
+  {
+    "city": "BOLIVAR",
+    "code": "100",
+    "department": "19"
+  },
+  {
+    "city": "BUENOS AIRES",
+    "code": "110",
+    "department": "19"
+  },
+  {
+    "city": "CAJIBIO",
+    "code": "130",
+    "department": "19"
+  },
+  {
+    "city": "CALDONO",
+    "code": "137",
+    "department": "19"
+  },
+  {
+    "city": "CALOTO",
+    "code": "142",
+    "department": "19"
+  },
+  {
+    "city": "CORINTO",
+    "code": "212",
+    "department": "19"
+  },
+  {
+    "city": "EL TAMBO",
+    "code": "256",
+    "department": "19"
+  },
+  {
+    "city": "FLORENCIA",
+    "code": "290",
+    "department": "19"
+  },
+  {
+    "city": "GUACHENE",
+    "code": "300",
+    "department": "19"
+  },
+  {
+    "city": "GUAPI",
+    "code": "318",
+    "department": "19"
+  },
+  {
+    "city": "INZA",
+    "code": "355",
+    "department": "19"
+  },
+  {
+    "city": "JAMBALO",
+    "code": "364",
+    "department": "19"
+  },
+  {
+    "city": "LA SIERRA",
+    "code": "392",
+    "department": "19"
+  },
+  {
+    "city": "LA VEGA",
+    "code": "397",
+    "department": "19"
+  },
+  {
+    "city": "LOPEZ",
+    "code": "418",
+    "department": "19"
+  },
+  {
+    "city": "MERCADERES",
+    "code": "450",
+    "department": "19"
+  },
+  {
+    "city": "MIRANDA",
+    "code": "455",
+    "department": "19"
+  },
+  {
+    "city": "MORALES",
+    "code": "473",
+    "department": "19"
+  },
+  {
+    "city": "PADILLA",
+    "code": "513",
+    "department": "19"
+  },
+  {
+    "city": "PAEZ",
+    "code": "517",
+    "department": "19"
+  },
+  {
+    "city": "PATIA",
+    "code": "532",
+    "department": "19"
+  },
+  {
+    "city": "PIAMONTE",
+    "code": "533",
+    "department": "19"
+  },
+  {
+    "city": "PIENDAMO",
+    "code": "548",
+    "department": "19"
+  },
+  {
+    "city": "PUERTO TEJADA",
+    "code": "573",
+    "department": "19"
+  },
+  {
+    "city": "PURACE",
+    "code": "585",
+    "department": "19"
+  },
+  {
+    "city": "ROSAS",
+    "code": "622",
+    "department": "19"
+  },
+  {
+    "city": "SAN SEBASTIAN",
+    "code": "693",
+    "department": "19"
+  },
+  {
+    "city": "SANTANDER DE QUILICHAO",
+    "code": "698",
+    "department": "19"
+  },
+  {
+    "city": "SANTA ROSA",
+    "code": "701",
+    "department": "19"
+  },
+  {
+    "city": "SILVIA",
+    "code": "743",
+    "department": "19"
+  },
+  {
+    "city": "SOTARA",
+    "code": "760",
+    "department": "19"
+  },
+  {
+    "city": "SUAREZ",
+    "code": "780",
+    "department": "19"
+  },
+  {
+    "city": "SUCRE",
+    "code": "785",
+    "department": "19"
+  },
+  {
+    "city": "TIMBIO",
+    "code": "807",
+    "department": "19"
+  },
+  {
+    "city": "TIMBIQUI",
+    "code": "809",
+    "department": "19"
+  },
+  {
+    "city": "TORIBIO",
+    "code": "821",
+    "department": "19"
+  },
+  {
+    "city": "TOTORO",
+    "code": "824",
+    "department": "19"
+  },
+  {
+    "city": "VILLA RICA",
+    "code": "845",
+    "department": "19"
+  },
+  {
+    "city": "VALLEDUPAR",
+    "code": "001",
+    "department": "20"
+  },
+  {
+    "city": "AGUACHICA",
+    "code": "011",
+    "department": "20"
+  },
+  {
+    "city": "AGUSTIN CODAZZI",
+    "code": "013",
+    "department": "20"
+  },
+  {
+    "city": "ASTREA",
+    "code": "032",
+    "department": "20"
+  },
+  {
+    "city": "BECERRIL",
+    "code": "045",
+    "department": "20"
+  },
+  {
+    "city": "BOSCONIA",
+    "code": "060",
+    "department": "20"
+  },
+  {
+    "city": "CHIMICHAGUA",
+    "code": "175",
+    "department": "20"
+  },
+  {
+    "city": "CHIRIGUANA",
+    "code": "178",
+    "department": "20"
+  },
+  {
+    "city": "CURUMANI",
+    "code": "228",
+    "department": "20"
+  },
+  {
+    "city": "EL COPEY",
+    "code": "238",
+    "department": "20"
+  },
+  {
+    "city": "EL PASO",
+    "code": "250",
+    "department": "20"
+  },
+  {
+    "city": "GAMARRA",
+    "code": "295",
+    "department": "20"
+  },
+  {
+    "city": "GONZALEZ",
+    "code": "310",
+    "department": "20"
+  },
+  {
+    "city": "LA GLORIA",
+    "code": "383",
+    "department": "20"
+  },
+  {
+    "city": "LA JAGUA DE IBIRICO",
+    "code": "400",
+    "department": "20"
+  },
+  {
+    "city": "MANAURE",
+    "code": "443",
+    "department": "20"
+  },
+  {
+    "city": "PAILITAS",
+    "code": "517",
+    "department": "20"
+  },
+  {
+    "city": "PELAYA",
+    "code": "550",
+    "department": "20"
+  },
+  {
+    "city": "PUEBLO BELLO",
+    "code": "570",
+    "department": "20"
+  },
+  {
+    "city": "RIO DE ORO",
+    "code": "614",
+    "department": "20"
+  },
+  {
+    "city": "LA PAZ",
+    "code": "621",
+    "department": "20"
+  },
+  {
+    "city": "SAN ALBERTO",
+    "code": "710",
+    "department": "20"
+  },
+  {
+    "city": "SAN DIEGO",
+    "code": "750",
+    "department": "20"
+  },
+  {
+    "city": "SAN MARTIN",
+    "code": "770",
+    "department": "20"
+  },
+  {
+    "city": "TAMALAMEQUE",
+    "code": "787",
+    "department": "20"
+  },
+  {
+    "city": "MONTERIA",
+    "code": "001",
+    "department": "23"
+  },
+  {
+    "city": "AYAPEL",
+    "code": "068",
+    "department": "23"
+  },
+  {
+    "city": "BUENAVISTA",
+    "code": "079",
+    "department": "23"
+  },
+  {
+    "city": "CANALETE",
+    "code": "090",
+    "department": "23"
+  },
+  {
+    "city": "CERETE",
+    "code": "162",
+    "department": "23"
+  },
+  {
+    "city": "CHIMA",
+    "code": "168",
+    "department": "23"
+  },
+  {
+    "city": "CHINU",
+    "code": "182",
+    "department": "23"
+  },
+  {
+    "city": "CIENAGA DE ORO",
+    "code": "189",
+    "department": "23"
+  },
+  {
+    "city": "COTORRA",
+    "code": "300",
+    "department": "23"
+  },
+  {
+    "city": "LA APARTADA",
+    "code": "350",
+    "department": "23"
+  },
+  {
+    "city": "LORICA",
+    "code": "417",
+    "department": "23"
+  },
+  {
+    "city": "LOS CORDOBAS",
+    "code": "419",
+    "department": "23"
+  },
+  {
+    "city": "MOMIL",
+    "code": "464",
+    "department": "23"
+  },
+  {
+    "city": "MONTELIBANO",
+    "code": "466",
+    "department": "23"
+  },
+  {
+    "city": "MOÑITOS",
+    "code": "500",
+    "department": "23"
+  },
+  {
+    "city": "PLANETA RICA",
+    "code": "555",
+    "department": "23"
+  },
+  {
+    "city": "PUEBLO NUEVO",
+    "code": "570",
+    "department": "23"
+  },
+  {
+    "city": "PUERTO ESCONDIDO",
+    "code": "574",
+    "department": "23"
+  },
+  {
+    "city": "PUERTO LIBERTADOR",
+    "code": "580",
+    "department": "23"
+  },
+  {
+    "city": "PURISIMA",
+    "code": "586",
+    "department": "23"
+  },
+  {
+    "city": "SAHAGUN",
+    "code": "660",
+    "department": "23"
+  },
+  {
+    "city": "SAN ANDRES SOTAVENTO",
+    "code": "670",
+    "department": "23"
+  },
+  {
+    "city": "SAN ANTERO",
+    "code": "672",
+    "department": "23"
+  },
+  {
+    "city": "SAN BERNARDO DEL VIENTO",
+    "code": "675",
+    "department": "23"
+  },
+  {
+    "city": "SAN CARLOS",
+    "code": "678",
+    "department": "23"
+  },
+  {
+    "city": "SAN PELAYO",
+    "code": "686",
+    "department": "23"
+  },
+  {
+    "city": "TIERRALTA",
+    "code": "807",
+    "department": "23"
+  },
+  {
+    "city": "VALENCIA",
+    "code": "855",
+    "department": "23"
+  },
+  {
+    "city": "AGUA DE DIOS",
+    "code": "001",
+    "department": "25"
+  },
+  {
+    "city": "ALBAN",
+    "code": "019",
+    "department": "25"
+  },
+  {
+    "city": "ANAPOIMA",
+    "code": "035",
+    "department": "25"
+  },
+  {
+    "city": "ANOLAIMA",
+    "code": "040",
+    "department": "25"
+  },
+  {
+    "city": "ARBELAEZ",
+    "code": "053",
+    "department": "25"
+  },
+  {
+    "city": "BELTRAN",
+    "code": "086",
+    "department": "25"
+  },
+  {
+    "city": "BITUIMA",
+    "code": "095",
+    "department": "25"
+  },
+  {
+    "city": "BOJACA",
+    "code": "099",
+    "department": "25"
+  },
+  {
+    "city": "CABRERA",
+    "code": "120",
+    "department": "25"
+  },
+  {
+    "city": "CACHIPAY",
+    "code": "123",
+    "department": "25"
+  },
+  {
+    "city": "CAJICA",
+    "code": "126",
+    "department": "25"
+  },
+  {
+    "city": "CAPARRAPI",
+    "code": "148",
+    "department": "25"
+  },
+  {
+    "city": "CAQUEZA",
+    "code": "151",
+    "department": "25"
+  },
+  {
+    "city": "CARMEN DE CARUPA",
+    "code": "154",
+    "department": "25"
+  },
+  {
+    "city": "CHAGUANI",
+    "code": "168",
+    "department": "25"
+  },
+  {
+    "city": "CHIA",
+    "code": "175",
+    "department": "25"
+  },
+  {
+    "city": "CHIPAQUE",
+    "code": "178",
+    "department": "25"
+  },
+  {
+    "city": "CHOACHI",
+    "code": "181",
+    "department": "25"
+  },
+  {
+    "city": "CHOCONTA",
+    "code": "183",
+    "department": "25"
+  },
+  {
+    "city": "COGUA",
+    "code": "200",
+    "department": "25"
+  },
+  {
+    "city": "COTA",
+    "code": "214",
+    "department": "25"
+  },
+  {
+    "city": "CUCUNUBA",
+    "code": "224",
+    "department": "25"
+  },
+  {
+    "city": "EL COLEGIO",
+    "code": "245",
+    "department": "25"
+  },
+  {
+    "city": "EL PEÑON",
+    "code": "258",
+    "department": "25"
+  },
+  {
+    "city": "EL ROSAL",
+    "code": "260",
+    "department": "25"
+  },
+  {
+    "city": "FACATATIVA",
+    "code": "269",
+    "department": "25"
+  },
+  {
+    "city": "FOMEQUE",
+    "code": "279",
+    "department": "25"
+  },
+  {
+    "city": "FOSCA",
+    "code": "281",
+    "department": "25"
+  },
+  {
+    "city": "FUNZA",
+    "code": "286",
+    "department": "25"
+  },
+  {
+    "city": "FUQUENE",
+    "code": "288",
+    "department": "25"
+  },
+  {
+    "city": "FUSAGASUGA",
+    "code": "290",
+    "department": "25"
+  },
+  {
+    "city": "GACHALA",
+    "code": "293",
+    "department": "25"
+  },
+  {
+    "city": "GACHANCIPA",
+    "code": "295",
+    "department": "25"
+  },
+  {
+    "city": "GACHETA",
+    "code": "297",
+    "department": "25"
+  },
+  {
+    "city": "GAMA",
+    "code": "299",
+    "department": "25"
+  },
+  {
+    "city": "GIRARDOT",
+    "code": "307",
+    "department": "25"
+  },
+  {
+    "city": "GRANADA",
+    "code": "312",
+    "department": "25"
+  },
+  {
+    "city": "GUACHETA",
+    "code": "317",
+    "department": "25"
+  },
+  {
+    "city": "GUADUAS",
+    "code": "320",
+    "department": "25"
+  },
+  {
+    "city": "GUASCA",
+    "code": "322",
+    "department": "25"
+  },
+  {
+    "city": "GUATAQUI",
+    "code": "324",
+    "department": "25"
+  },
+  {
+    "city": "GUATAVITA",
+    "code": "326",
+    "department": "25"
+  },
+  {
+    "city": "GUAYABAL DE SIQUIMA",
+    "code": "328",
+    "department": "25"
+  },
+  {
+    "city": "GUAYABETAL",
+    "code": "335",
+    "department": "25"
+  },
+  {
+    "city": "GUTIERREZ",
+    "code": "339",
+    "department": "25"
+  },
+  {
+    "city": "JERUSALEN",
+    "code": "368",
+    "department": "25"
+  },
+  {
+    "city": "JUNIN",
+    "code": "372",
+    "department": "25"
+  },
+  {
+    "city": "LA CALERA",
+    "code": "377",
+    "department": "25"
+  },
+  {
+    "city": "LA MESA",
+    "code": "386",
+    "department": "25"
+  },
+  {
+    "city": "LA PALMA",
+    "code": "394",
+    "department": "25"
+  },
+  {
+    "city": "LA PEÑA",
+    "code": "398",
+    "department": "25"
+  },
+  {
+    "city": "LA VEGA",
+    "code": "402",
+    "department": "25"
+  },
+  {
+    "city": "LENGUAZAQUE",
+    "code": "407",
+    "department": "25"
+  },
+  {
+    "city": "MACHETA",
+    "code": "426",
+    "department": "25"
+  },
+  {
+    "city": "MADRID",
+    "code": "430",
+    "department": "25"
+  },
+  {
+    "city": "MANTA",
+    "code": "436",
+    "department": "25"
+  },
+  {
+    "city": "MEDINA",
+    "code": "438",
+    "department": "25"
+  },
+  {
+    "city": "MOSQUERA",
+    "code": "473",
+    "department": "25"
+  },
+  {
+    "city": "NARIÑO",
+    "code": "483",
+    "department": "25"
+  },
+  {
+    "city": "NEMOCON",
+    "code": "486",
+    "department": "25"
+  },
+  {
+    "city": "NILO",
+    "code": "488",
+    "department": "25"
+  },
+  {
+    "city": "NIMAIMA",
+    "code": "489",
+    "department": "25"
+  },
+  {
+    "city": "NOCAIMA",
+    "code": "491",
+    "department": "25"
+  },
+  {
+    "city": "VENECIA",
+    "code": "506",
+    "department": "25"
+  },
+  {
+    "city": "PACHO",
+    "code": "513",
+    "department": "25"
+  },
+  {
+    "city": "PAIME",
+    "code": "518",
+    "department": "25"
+  },
+  {
+    "city": "PANDI",
+    "code": "524",
+    "department": "25"
+  },
+  {
+    "city": "PARATEBUENO",
+    "code": "530",
+    "department": "25"
+  },
+  {
+    "city": "PASCA",
+    "code": "535",
+    "department": "25"
+  },
+  {
+    "city": "PUERTO SALGAR",
+    "code": "572",
+    "department": "25"
+  },
+  {
+    "city": "PULI",
+    "code": "580",
+    "department": "25"
+  },
+  {
+    "city": "QUEBRADANEGRA",
+    "code": "592",
+    "department": "25"
+  },
+  {
+    "city": "QUETAME",
+    "code": "594",
+    "department": "25"
+  },
+  {
+    "city": "QUIPILE",
+    "code": "596",
+    "department": "25"
+  },
+  {
+    "city": "APULO",
+    "code": "599",
+    "department": "25"
+  },
+  {
+    "city": "RICAURTE",
+    "code": "612",
+    "department": "25"
+  },
+  {
+    "city": "SAN ANTONIO DEL TEQUENDAMA",
+    "code": "645",
+    "department": "25"
+  },
+  {
+    "city": "SAN BERNARDO",
+    "code": "649",
+    "department": "25"
+  },
+  {
+    "city": "SAN CAYETANO",
+    "code": "653",
+    "department": "25"
+  },
+  {
+    "city": "SAN FRANCISCO",
+    "code": "658",
+    "department": "25"
+  },
+  {
+    "city": "SAN JUAN DE RIO SECO",
+    "code": "662",
+    "department": "25"
+  },
+  {
+    "city": "SASAIMA",
+    "code": "718",
+    "department": "25"
+  },
+  {
+    "city": "SESQUILE",
+    "code": "736",
+    "department": "25"
+  },
+  {
+    "city": "SIBATE",
+    "code": "740",
+    "department": "25"
+  },
+  {
+    "city": "SILVANIA",
+    "code": "743",
+    "department": "25"
+  },
+  {
+    "city": "SIMIJACA",
+    "code": "745",
+    "department": "25"
+  },
+  {
+    "city": "SOACHA",
+    "code": "754",
+    "department": "25"
+  },
+  {
+    "city": "SOPO",
+    "code": "758",
+    "department": "25"
+  },
+  {
+    "city": "SUBACHOQUE",
+    "code": "769",
+    "department": "25"
+  },
+  {
+    "city": "SUESCA",
+    "code": "772",
+    "department": "25"
+  },
+  {
+    "city": "SUPATA",
+    "code": "777",
+    "department": "25"
+  },
+  {
+    "city": "SUSA",
+    "code": "779",
+    "department": "25"
+  },
+  {
+    "city": "SUTATAUSA",
+    "code": "781",
+    "department": "25"
+  },
+  {
+    "city": "TABIO",
+    "code": "785",
+    "department": "25"
+  },
+  {
+    "city": "TAUSA",
+    "code": "793",
+    "department": "25"
+  },
+  {
+    "city": "TENA",
+    "code": "797",
+    "department": "25"
+  },
+  {
+    "city": "TENJO",
+    "code": "799",
+    "department": "25"
+  },
+  {
+    "city": "TIBACUY",
+    "code": "805",
+    "department": "25"
+  },
+  {
+    "city": "TIBIRITA",
+    "code": "807",
+    "department": "25"
+  },
+  {
+    "city": "TOCAIMA",
+    "code": "815",
+    "department": "25"
+  },
+  {
+    "city": "TOCANCIPA",
+    "code": "817",
+    "department": "25"
+  },
+  {
+    "city": "TOPAIPI",
+    "code": "823",
+    "department": "25"
+  },
+  {
+    "city": "UBALA",
+    "code": "839",
+    "department": "25"
+  },
+  {
+    "city": "UBAQUE",
+    "code": "841",
+    "department": "25"
+  },
+  {
+    "city": "VILLA DE SAN DIEGO DE UBATE",
+    "code": "843",
+    "department": "25"
+  },
+  {
+    "city": "UNE",
+    "code": "845",
+    "department": "25"
+  },
+  {
+    "city": "UTICA",
+    "code": "851",
+    "department": "25"
+  },
+  {
+    "city": "VERGARA",
+    "code": "862",
+    "department": "25"
+  },
+  {
+    "city": "VIANI",
+    "code": "867",
+    "department": "25"
+  },
+  {
+    "city": "VILLAGOMEZ",
+    "code": "871",
+    "department": "25"
+  },
+  {
+    "city": "VILLAPINZON",
+    "code": "873",
+    "department": "25"
+  },
+  {
+    "city": "VILLETA",
+    "code": "875",
+    "department": "25"
+  },
+  {
+    "city": "VIOTA",
+    "code": "878",
+    "department": "25"
+  },
+  {
+    "city": "YACOPI",
+    "code": "885",
+    "department": "25"
+  },
+  {
+    "city": "ZIPACON",
+    "code": "898",
+    "department": "25"
+  },
+  {
+    "city": "ZIPAQUIRA",
+    "code": "899",
+    "department": "25"
+  },
+  {
+    "city": "QUIBDO",
+    "code": "001",
+    "department": "27"
+  },
+  {
+    "city": "ACANDI",
+    "code": "006",
+    "department": "27"
+  },
+  {
+    "city": "ALTO BAUDO",
+    "code": "025",
+    "department": "27"
+  },
+  {
+    "city": "ATRATO",
+    "code": "050",
+    "department": "27"
+  },
+  {
+    "city": "BAGADO",
+    "code": "073",
+    "department": "27"
+  },
+  {
+    "city": "BAHIA SOLANO",
+    "code": "075",
+    "department": "27"
+  },
+  {
+    "city": "BAJO BAUDO",
+    "code": "077",
+    "department": "27"
+  },
+  {
+    "city": "BOJAYA",
+    "code": "099",
+    "department": "27"
+  },
+  {
+    "city": "EL CANTON DEL SAN PABLO",
+    "code": "135",
+    "department": "27"
+  },
+  {
+    "city": "CARMEN DEL DARIEN",
+    "code": "150",
+    "department": "27"
+  },
+  {
+    "city": "CERTEGUI",
+    "code": "160",
+    "department": "27"
+  },
+  {
+    "city": "CONDOTO",
+    "code": "205",
+    "department": "27"
+  },
+  {
+    "city": "EL CARMEN DE ATRATO",
+    "code": "245",
+    "department": "27"
+  },
+  {
+    "city": "EL LITORAL DEL SAN JUAN",
+    "code": "250",
+    "department": "27"
+  },
+  {
+    "city": "ISTMINA",
+    "code": "361",
+    "department": "27"
+  },
+  {
+    "city": "JURADO",
+    "code": "372",
+    "department": "27"
+  },
+  {
+    "city": "LLORO",
+    "code": "413",
+    "department": "27"
+  },
+  {
+    "city": "MEDIO ATRATO",
+    "code": "425",
+    "department": "27"
+  },
+  {
+    "city": "MEDIO BAUDO",
+    "code": "430",
+    "department": "27"
+  },
+  {
+    "city": "MEDIO SAN JUAN",
+    "code": "450",
+    "department": "27"
+  },
+  {
+    "city": "NOVITA",
+    "code": "491",
+    "department": "27"
+  },
+  {
+    "city": "NUQUI",
+    "code": "495",
+    "department": "27"
+  },
+  {
+    "city": "RIO IRO",
+    "code": "580",
+    "department": "27"
+  },
+  {
+    "city": "RIO QUITO",
+    "code": "600",
+    "department": "27"
+  },
+  {
+    "city": "RIOSUCIO",
+    "code": "615",
+    "department": "27"
+  },
+  {
+    "city": "SAN JOSE DEL PALMAR",
+    "code": "660",
+    "department": "27"
+  },
+  {
+    "city": "SIPI",
+    "code": "745",
+    "department": "27"
+  },
+  {
+    "city": "TADO",
+    "code": "787",
+    "department": "27"
+  },
+  {
+    "city": "UNGUIA",
+    "code": "800",
+    "department": "27"
+  },
+  {
+    "city": "UNION PANAMERICANA",
+    "code": "810",
+    "department": "27"
+  },
+  {
+    "city": "NEIVA",
+    "code": "001",
+    "department": "41"
+  },
+  {
+    "city": "ACEVEDO",
+    "code": "006",
+    "department": "41"
+  },
+  {
+    "city": "AGRADO",
+    "code": "013",
+    "department": "41"
+  },
+  {
+    "city": "AIPE",
+    "code": "016",
+    "department": "41"
+  },
+  {
+    "city": "ALGECIRAS",
+    "code": "020",
+    "department": "41"
+  },
+  {
+    "city": "ALTAMIRA",
+    "code": "026",
+    "department": "41"
+  },
+  {
+    "city": "BARAYA",
+    "code": "078",
+    "department": "41"
+  },
+  {
+    "city": "CAMPOALEGRE",
+    "code": "132",
+    "department": "41"
+  },
+  {
+    "city": "COLOMBIA",
+    "code": "206",
+    "department": "41"
+  },
+  {
+    "city": "ELIAS",
+    "code": "244",
+    "department": "41"
+  },
+  {
+    "city": "GARZON",
+    "code": "298",
+    "department": "41"
+  },
+  {
+    "city": "GIGANTE",
+    "code": "306",
+    "department": "41"
+  },
+  {
+    "city": "GUADALUPE",
+    "code": "319",
+    "department": "41"
+  },
+  {
+    "city": "HOBO",
+    "code": "349",
+    "department": "41"
+  },
+  {
+    "city": "IQUIRA",
+    "code": "357",
+    "department": "41"
+  },
+  {
+    "city": "ISNOS",
+    "code": "359",
+    "department": "41"
+  },
+  {
+    "city": "LA ARGENTINA",
+    "code": "378",
+    "department": "41"
+  },
+  {
+    "city": "LA PLATA",
+    "code": "396",
+    "department": "41"
+  },
+  {
+    "city": "NATAGA",
+    "code": "483",
+    "department": "41"
+  },
+  {
+    "city": "OPORAPA",
+    "code": "503",
+    "department": "41"
+  },
+  {
+    "city": "PAICOL",
+    "code": "518",
+    "department": "41"
+  },
+  {
+    "city": "PALERMO",
+    "code": "524",
+    "department": "41"
+  },
+  {
+    "city": "PALESTINA",
+    "code": "530",
+    "department": "41"
+  },
+  {
+    "city": "PITAL",
+    "code": "548",
+    "department": "41"
+  },
+  {
+    "city": "PITALITO",
+    "code": "551",
+    "department": "41"
+  },
+  {
+    "city": "RIVERA",
+    "code": "615",
+    "department": "41"
+  },
+  {
+    "city": "SALADOBLANCO",
+    "code": "660",
+    "department": "41"
+  },
+  {
+    "city": "SAN AGUSTIN",
+    "code": "668",
+    "department": "41"
+  },
+  {
+    "city": "SANTA MARIA",
+    "code": "676",
+    "department": "41"
+  },
+  {
+    "city": "SUAZA",
+    "code": "770",
+    "department": "41"
+  },
+  {
+    "city": "TARQUI",
+    "code": "791",
+    "department": "41"
+  },
+  {
+    "city": "TESALIA",
+    "code": "797",
+    "department": "41"
+  },
+  {
+    "city": "TELLO",
+    "code": "799",
+    "department": "41"
+  },
+  {
+    "city": "TERUEL",
+    "code": "801",
+    "department": "41"
+  },
+  {
+    "city": "TIMANA",
+    "code": "807",
+    "department": "41"
+  },
+  {
+    "city": "VILLAVIEJA",
+    "code": "872",
+    "department": "41"
+  },
+  {
+    "city": "YAGUARA",
+    "code": "885",
+    "department": "41"
+  },
+  {
+    "city": "RIOHACHA",
+    "code": "001",
+    "department": "44"
+  },
+  {
+    "city": "ALBANIA",
+    "code": "035",
+    "department": "44"
+  },
+  {
+    "city": "BARRANCAS",
+    "code": "078",
+    "department": "44"
+  },
+  {
+    "city": "DIBULLA",
+    "code": "090",
+    "department": "44"
+  },
+  {
+    "city": "DISTRACCION",
+    "code": "098",
+    "department": "44"
+  },
+  {
+    "city": "EL MOLINO",
+    "code": "110",
+    "department": "44"
+  },
+  {
+    "city": "FONSECA",
+    "code": "279",
+    "department": "44"
+  },
+  {
+    "city": "HATONUEVO",
+    "code": "378",
+    "department": "44"
+  },
+  {
+    "city": "LA JAGUA DEL PILAR",
+    "code": "420",
+    "department": "44"
+  },
+  {
+    "city": "MAICAO",
+    "code": "430",
+    "department": "44"
+  },
+  {
+    "city": "MANAURE",
+    "code": "560",
+    "department": "44"
+  },
+  {
+    "city": "SAN JUAN DEL CESAR",
+    "code": "650",
+    "department": "44"
+  },
+  {
+    "city": "URIBIA",
+    "code": "847",
+    "department": "44"
+  },
+  {
+    "city": "URUMITA",
+    "code": "855",
+    "department": "44"
+  },
+  {
+    "city": "VILLANUEVA",
+    "code": "874",
+    "department": "44"
+  },
+  {
+    "city": "SANTA MARTA",
+    "code": "001",
+    "department": "47"
+  },
+  {
+    "city": "ALGARROBO",
+    "code": "030",
+    "department": "47"
+  },
+  {
+    "city": "ARACATACA",
+    "code": "053",
+    "department": "47"
+  },
+  {
+    "city": "ARIGUANI",
+    "code": "058",
+    "department": "47"
+  },
+  {
+    "city": "CERRO SAN ANTONIO",
+    "code": "161",
+    "department": "47"
+  },
+  {
+    "city": "CHIBOLO",
+    "code": "170",
+    "department": "47"
+  },
+  {
+    "city": "CIENAGA",
+    "code": "189",
+    "department": "47"
+  },
+  {
+    "city": "CONCORDIA",
+    "code": "205",
+    "department": "47"
+  },
+  {
+    "city": "EL BANCO",
+    "code": "245",
+    "department": "47"
+  },
+  {
+    "city": "EL PIÑON",
+    "code": "258",
+    "department": "47"
+  },
+  {
+    "city": "EL RETEN",
+    "code": "268",
+    "department": "47"
+  },
+  {
+    "city": "FUNDACION",
+    "code": "288",
+    "department": "47"
+  },
+  {
+    "city": "GUAMAL",
+    "code": "318",
+    "department": "47"
+  },
+  {
+    "city": "NUEVA GRANADA",
+    "code": "460",
+    "department": "47"
+  },
+  {
+    "city": "PEDRAZA",
+    "code": "541",
+    "department": "47"
+  },
+  {
+    "city": "PIJIÑO DEL CARMEN",
+    "code": "545",
+    "department": "47"
+  },
+  {
+    "city": "PIVIJAY",
+    "code": "551",
+    "department": "47"
+  },
+  {
+    "city": "PLATO",
+    "code": "555",
+    "department": "47"
+  },
+  {
+    "city": "PUEBLOVIEJO",
+    "code": "570",
+    "department": "47"
+  },
+  {
+    "city": "REMOLINO",
+    "code": "605",
+    "department": "47"
+  },
+  {
+    "city": "SABANAS DE SAN ANGEL",
+    "code": "660",
+    "department": "47"
+  },
+  {
+    "city": "SALAMINA",
+    "code": "675",
+    "department": "47"
+  },
+  {
+    "city": "SAN SEBASTIAN DE BUENAVISTA",
+    "code": "692",
+    "department": "47"
+  },
+  {
+    "city": "SAN ZENON",
+    "code": "703",
+    "department": "47"
+  },
+  {
+    "city": "SANTA ANA",
+    "code": "707",
+    "department": "47"
+  },
+  {
+    "city": "SANTA BARBARA DE PINTO",
+    "code": "720",
+    "department": "47"
+  },
+  {
+    "city": "SITIONUEVO",
+    "code": "745",
+    "department": "47"
+  },
+  {
+    "city": "TENERIFE",
+    "code": "798",
+    "department": "47"
+  },
+  {
+    "city": "ZAPAYAN",
+    "code": "960",
+    "department": "47"
+  },
+  {
+    "city": "ZONA BANANERA",
+    "code": "980",
+    "department": "47"
+  },
+  {
+    "city": "VILLAVICENCIO",
+    "code": "001",
+    "department": "50"
+  },
+  {
+    "city": "ACACIAS",
+    "code": "006",
+    "department": "50"
+  },
+  {
+    "city": "BARRANCA DE UPIA",
+    "code": "110",
+    "department": "50"
+  },
+  {
+    "city": "CABUYARO",
+    "code": "124",
+    "department": "50"
+  },
+  {
+    "city": "CASTILLA LA NUEVA",
+    "code": "150",
+    "department": "50"
+  },
+  {
+    "city": "CUBARRAL",
+    "code": "223",
+    "department": "50"
+  },
+  {
+    "city": "CUMARAL",
+    "code": "226",
+    "department": "50"
+  },
+  {
+    "city": "EL CALVARIO",
+    "code": "245",
+    "department": "50"
+  },
+  {
+    "city": "EL CASTILLO",
+    "code": "251",
+    "department": "50"
+  },
+  {
+    "city": "EL DORADO",
+    "code": "270",
+    "department": "50"
+  },
+  {
+    "city": "FUENTE DE ORO",
+    "code": "287",
+    "department": "50"
+  },
+  {
+    "city": "GRANADA",
+    "code": "313",
+    "department": "50"
+  },
+  {
+    "city": "GUAMAL",
+    "code": "318",
+    "department": "50"
+  },
+  {
+    "city": "MAPIRIPAN",
+    "code": "325",
+    "department": "50"
+  },
+  {
+    "city": "MESETAS",
+    "code": "330",
+    "department": "50"
+  },
+  {
+    "city": "LA MACARENA",
+    "code": "350",
+    "department": "50"
+  },
+  {
+    "city": "URIBE",
+    "code": "370",
+    "department": "50"
+  },
+  {
+    "city": "LEJANIAS",
+    "code": "400",
+    "department": "50"
+  },
+  {
+    "city": "PUERTO CONCORDIA",
+    "code": "450",
+    "department": "50"
+  },
+  {
+    "city": "PUERTO GAITAN",
+    "code": "568",
+    "department": "50"
+  },
+  {
+    "city": "PUERTO LOPEZ",
+    "code": "573",
+    "department": "50"
+  },
+  {
+    "city": "PUERTO LLERAS",
+    "code": "577",
+    "department": "50"
+  },
+  {
+    "city": "PUERTO RICO",
+    "code": "590",
+    "department": "50"
+  },
+  {
+    "city": "RESTREPO",
+    "code": "606",
+    "department": "50"
+  },
+  {
+    "city": "SAN CARLOS DE GUAROA",
+    "code": "680",
+    "department": "50"
+  },
+  {
+    "city": "SAN JUAN DE ARAMA",
+    "code": "683",
+    "department": "50"
+  },
+  {
+    "city": "SAN JUANITO",
+    "code": "686",
+    "department": "50"
+  },
+  {
+    "city": "SAN MARTIN",
+    "code": "689",
+    "department": "50"
+  },
+  {
+    "city": "VISTAHERMOSA",
+    "code": "711",
+    "department": "50"
+  },
+  {
+    "city": "PASTO",
+    "code": "001",
+    "department": "52"
+  },
+  {
+    "city": "ALBAN",
+    "code": "019",
+    "department": "52"
+  },
+  {
+    "city": "ALDANA",
+    "code": "022",
+    "department": "52"
+  },
+  {
+    "city": "ANCUYA",
+    "code": "036",
+    "department": "52"
+  },
+  {
+    "city": "ARBOLEDA",
+    "code": "051",
+    "department": "52"
+  },
+  {
+    "city": "BARBACOAS",
+    "code": "079",
+    "department": "52"
+  },
+  {
+    "city": "BELEN",
+    "code": "083",
+    "department": "52"
+  },
+  {
+    "city": "BUESACO",
+    "code": "110",
+    "department": "52"
+  },
+  {
+    "city": "COLON",
+    "code": "203",
+    "department": "52"
+  },
+  {
+    "city": "CONSACA",
+    "code": "207",
+    "department": "52"
+  },
+  {
+    "city": "CONTADERO",
+    "code": "210",
+    "department": "52"
+  },
+  {
+    "city": "CORDOBA",
+    "code": "215",
+    "department": "52"
+  },
+  {
+    "city": "CUASPUD",
+    "code": "224",
+    "department": "52"
+  },
+  {
+    "city": "CUMBAL",
+    "code": "227",
+    "department": "52"
+  },
+  {
+    "city": "CUMBITARA",
+    "code": "233",
+    "department": "52"
+  },
+  {
+    "city": "CHACHAGsI",
+    "code": "240",
+    "department": "52"
+  },
+  {
+    "city": "EL CHARCO",
+    "code": "250",
+    "department": "52"
+  },
+  {
+    "city": "EL PEÑOL",
+    "code": "254",
+    "department": "52"
+  },
+  {
+    "city": "EL ROSARIO",
+    "code": "256",
+    "department": "52"
+  },
+  {
+    "city": "EL TABLON DE GOMEZ",
+    "code": "258",
+    "department": "52"
+  },
+  {
+    "city": "EL TAMBO",
+    "code": "260",
+    "department": "52"
+  },
+  {
+    "city": "FUNES",
+    "code": "287",
+    "department": "52"
+  },
+  {
+    "city": "GUACHUCAL",
+    "code": "317",
+    "department": "52"
+  },
+  {
+    "city": "GUAITARILLA",
+    "code": "320",
+    "department": "52"
+  },
+  {
+    "city": "GUALMATAN",
+    "code": "323",
+    "department": "52"
+  },
+  {
+    "city": "ILES",
+    "code": "352",
+    "department": "52"
+  },
+  {
+    "city": "IMUES",
+    "code": "354",
+    "department": "52"
+  },
+  {
+    "city": "IPIALES",
+    "code": "356",
+    "department": "52"
+  },
+  {
+    "city": "LA CRUZ",
+    "code": "378",
+    "department": "52"
+  },
+  {
+    "city": "LA FLORIDA",
+    "code": "381",
+    "department": "52"
+  },
+  {
+    "city": "LA LLANADA",
+    "code": "385",
+    "department": "52"
+  },
+  {
+    "city": "LA TOLA",
+    "code": "390",
+    "department": "52"
+  },
+  {
+    "city": "LA UNION",
+    "code": "399",
+    "department": "52"
+  },
+  {
+    "city": "LEIVA",
+    "code": "405",
+    "department": "52"
+  },
+  {
+    "city": "LINARES",
+    "code": "411",
+    "department": "52"
+  },
+  {
+    "city": "LOS ANDES",
+    "code": "418",
+    "department": "52"
+  },
+  {
+    "city": "MAGsI",
+    "code": "427",
+    "department": "52"
+  },
+  {
+    "city": "MALLAMA",
+    "code": "435",
+    "department": "52"
+  },
+  {
+    "city": "MOSQUERA",
+    "code": "473",
+    "department": "52"
+  },
+  {
+    "city": "NARIÑO",
+    "code": "480",
+    "department": "52"
+  },
+  {
+    "city": "OLAYA HERRERA",
+    "code": "490",
+    "department": "52"
+  },
+  {
+    "city": "OSPINA",
+    "code": "506",
+    "department": "52"
+  },
+  {
+    "city": "FRANCISCO PIZARRO",
+    "code": "520",
+    "department": "52"
+  },
+  {
+    "city": "POLICARPA",
+    "code": "540",
+    "department": "52"
+  },
+  {
+    "city": "POTOSI",
+    "code": "560",
+    "department": "52"
+  },
+  {
+    "city": "PROVIDENCIA",
+    "code": "565",
+    "department": "52"
+  },
+  {
+    "city": "PUERRES",
+    "code": "573",
+    "department": "52"
+  },
+  {
+    "city": "PUPIALES",
+    "code": "585",
+    "department": "52"
+  },
+  {
+    "city": "RICAURTE",
+    "code": "612",
+    "department": "52"
+  },
+  {
+    "city": "ROBERTO PAYAN",
+    "code": "621",
+    "department": "52"
+  },
+  {
+    "city": "SAMANIEGO",
+    "code": "678",
+    "department": "52"
+  },
+  {
+    "city": "SANDONA",
+    "code": "683",
+    "department": "52"
+  },
+  {
+    "city": "SAN BERNARDO",
+    "code": "685",
+    "department": "52"
+  },
+  {
+    "city": "SAN LORENZO",
+    "code": "687",
+    "department": "52"
+  },
+  {
+    "city": "SAN PABLO",
+    "code": "693",
+    "department": "52"
+  },
+  {
+    "city": "SAN PEDRO DE CARTAGO",
+    "code": "694",
+    "department": "52"
+  },
+  {
+    "city": "SANTA BARBARA",
+    "code": "696",
+    "department": "52"
+  },
+  {
+    "city": "SANTACRUZ",
+    "code": "699",
+    "department": "52"
+  },
+  {
+    "city": "SAPUYES",
+    "code": "720",
+    "department": "52"
+  },
+  {
+    "city": "TAMINANGO",
+    "code": "786",
+    "department": "52"
+  },
+  {
+    "city": "TANGUA",
+    "code": "788",
+    "department": "52"
+  },
+  {
+    "city": "SAN ANDRES DE TUMACO",
+    "code": "835",
+    "department": "52"
+  },
+  {
+    "city": "TUQUERRES",
+    "code": "838",
+    "department": "52"
+  },
+  {
+    "city": "YACUANQUER",
+    "code": "885",
+    "department": "52"
+  },
+  {
+    "city": "CUCUTA",
+    "code": "001",
+    "department": "54"
+  },
+  {
+    "city": "ABREGO",
+    "code": "003",
+    "department": "54"
+  },
+  {
+    "city": "ARBOLEDAS",
+    "code": "051",
+    "department": "54"
+  },
+  {
+    "city": "BOCHALEMA",
+    "code": "099",
+    "department": "54"
+  },
+  {
+    "city": "BUCARASICA",
+    "code": "109",
+    "department": "54"
+  },
+  {
+    "city": "CACOTA",
+    "code": "125",
+    "department": "54"
+  },
+  {
+    "city": "CACHIRA",
+    "code": "128",
+    "department": "54"
+  },
+  {
+    "city": "CHINACOTA",
+    "code": "172",
+    "department": "54"
+  },
+  {
+    "city": "CHITAGA",
+    "code": "174",
+    "department": "54"
+  },
+  {
+    "city": "CONVENCION",
+    "code": "206",
+    "department": "54"
+  },
+  {
+    "city": "CUCUTILLA",
+    "code": "223",
+    "department": "54"
+  },
+  {
+    "city": "DURANIA",
+    "code": "239",
+    "department": "54"
+  },
+  {
+    "city": "EL CARMEN",
+    "code": "245",
+    "department": "54"
+  },
+  {
+    "city": "EL TARRA",
+    "code": "250",
+    "department": "54"
+  },
+  {
+    "city": "EL ZULIA",
+    "code": "261",
+    "department": "54"
+  },
+  {
+    "city": "GRAMALOTE",
+    "code": "313",
+    "department": "54"
+  },
+  {
+    "city": "HACARI",
+    "code": "344",
+    "department": "54"
+  },
+  {
+    "city": "HERRAN",
+    "code": "347",
+    "department": "54"
+  },
+  {
+    "city": "LABATECA",
+    "code": "377",
+    "department": "54"
+  },
+  {
+    "city": "LA ESPERANZA",
+    "code": "385",
+    "department": "54"
+  },
+  {
+    "city": "LA PLAYA",
+    "code": "398",
+    "department": "54"
+  },
+  {
+    "city": "LOS PATIOS",
+    "code": "405",
+    "department": "54"
+  },
+  {
+    "city": "LOURDES",
+    "code": "418",
+    "department": "54"
+  },
+  {
+    "city": "MUTISCUA",
+    "code": "480",
+    "department": "54"
+  },
+  {
+    "city": "OCAÑA",
+    "code": "498",
+    "department": "54"
+  },
+  {
+    "city": "PAMPLONA",
+    "code": "518",
+    "department": "54"
+  },
+  {
+    "city": "PAMPLONITA",
+    "code": "520",
+    "department": "54"
+  },
+  {
+    "city": "PUERTO SANTANDER",
+    "code": "553",
+    "department": "54"
+  },
+  {
+    "city": "RAGONVALIA",
+    "code": "599",
+    "department": "54"
+  },
+  {
+    "city": "SALAZAR",
+    "code": "660",
+    "department": "54"
+  },
+  {
+    "city": "SAN CALIXTO",
+    "code": "670",
+    "department": "54"
+  },
+  {
+    "city": "SAN CAYETANO",
+    "code": "673",
+    "department": "54"
+  },
+  {
+    "city": "SANTIAGO",
+    "code": "680",
+    "department": "54"
+  },
+  {
+    "city": "SARDINATA",
+    "code": "720",
+    "department": "54"
+  },
+  {
+    "city": "SILOS",
+    "code": "743",
+    "department": "54"
+  },
+  {
+    "city": "TEORAMA",
+    "code": "800",
+    "department": "54"
+  },
+  {
+    "city": "TIBU",
+    "code": "810",
+    "department": "54"
+  },
+  {
+    "city": "TOLEDO",
+    "code": "820",
+    "department": "54"
+  },
+  {
+    "city": "VILLA CARO",
+    "code": "871",
+    "department": "54"
+  },
+  {
+    "city": "VILLA DEL ROSARIO",
+    "code": "874",
+    "department": "54"
+  },
+  {
+    "city": "ARMENIA",
+    "code": "001",
+    "department": "63"
+  },
+  {
+    "city": "BUENAVISTA",
+    "code": "111",
+    "department": "63"
+  },
+  {
+    "city": "CALARCA",
+    "code": "130",
+    "department": "63"
+  },
+  {
+    "city": "CIRCASIA",
+    "code": "190",
+    "department": "63"
+  },
+  {
+    "city": "CORDOBA",
+    "code": "212",
+    "department": "63"
+  },
+  {
+    "city": "FILANDIA",
+    "code": "272",
+    "department": "63"
+  },
+  {
+    "city": "GENOVA",
+    "code": "302",
+    "department": "63"
+  },
+  {
+    "city": "LA TEBAIDA",
+    "code": "401",
+    "department": "63"
+  },
+  {
+    "city": "MONTENEGRO",
+    "code": "470",
+    "department": "63"
+  },
+  {
+    "city": "PIJAO",
+    "code": "548",
+    "department": "63"
+  },
+  {
+    "city": "QUIMBAYA",
+    "code": "594",
+    "department": "63"
+  },
+  {
+    "city": "SALENTO",
+    "code": "690",
+    "department": "63"
+  },
+  {
+    "city": "PEREIRA",
+    "code": "001",
+    "department": "66"
+  },
+  {
+    "city": "APIA",
+    "code": "045",
+    "department": "66"
+  },
+  {
+    "city": "BALBOA",
+    "code": "075",
+    "department": "66"
+  },
+  {
+    "city": "BELEN DE UMBRIA",
+    "code": "088",
+    "department": "66"
+  },
+  {
+    "city": "DOSQUEBRADAS",
+    "code": "170",
+    "department": "66"
+  },
+  {
+    "city": "GUATICA",
+    "code": "318",
+    "department": "66"
+  },
+  {
+    "city": "LA CELIA",
+    "code": "383",
+    "department": "66"
+  },
+  {
+    "city": "LA VIRGINIA",
+    "code": "400",
+    "department": "66"
+  },
+  {
+    "city": "MARSELLA",
+    "code": "440",
+    "department": "66"
+  },
+  {
+    "city": "MISTRATO",
+    "code": "456",
+    "department": "66"
+  },
+  {
+    "city": "PUEBLO RICO",
+    "code": "572",
+    "department": "66"
+  },
+  {
+    "city": "QUINCHIA",
+    "code": "594",
+    "department": "66"
+  },
+  {
+    "city": "SANTA ROSA DE CABAL",
+    "code": "682",
+    "department": "66"
+  },
+  {
+    "city": "SANTUARIO",
+    "code": "687",
+    "department": "66"
+  },
+  {
+    "city": "BUCARAMANGA",
+    "code": "001",
+    "department": "68"
+  },
+  {
+    "city": "AGUADA",
+    "code": "013",
+    "department": "68"
+  },
+  {
+    "city": "ALBANIA",
+    "code": "020",
+    "department": "68"
+  },
+  {
+    "city": "ARATOCA",
+    "code": "051",
+    "department": "68"
+  },
+  {
+    "city": "BARBOSA",
+    "code": "077",
+    "department": "68"
+  },
+  {
+    "city": "BARICHARA",
+    "code": "079",
+    "department": "68"
+  },
+  {
+    "city": "BARRANCABERMEJA",
+    "code": "081",
+    "department": "68"
+  },
+  {
+    "city": "BETULIA",
+    "code": "092",
+    "department": "68"
+  },
+  {
+    "city": "BOLIVAR",
+    "code": "101",
+    "department": "68"
+  },
+  {
+    "city": "CABRERA",
+    "code": "121",
+    "department": "68"
+  },
+  {
+    "city": "CALIFORNIA",
+    "code": "132",
+    "department": "68"
+  },
+  {
+    "city": "CAPITANEJO",
+    "code": "147",
+    "department": "68"
+  },
+  {
+    "city": "CARCASI",
+    "code": "152",
+    "department": "68"
+  },
+  {
+    "city": "CEPITA",
+    "code": "160",
+    "department": "68"
+  },
+  {
+    "city": "CERRITO",
+    "code": "162",
+    "department": "68"
+  },
+  {
+    "city": "CHARALA",
+    "code": "167",
+    "department": "68"
+  },
+  {
+    "city": "CHARTA",
+    "code": "169",
+    "department": "68"
+  },
+  {
+    "city": "CHIMA",
+    "code": "176",
+    "department": "68"
+  },
+  {
+    "city": "CHIPATA",
+    "code": "179",
+    "department": "68"
+  },
+  {
+    "city": "CIMITARRA",
+    "code": "190",
+    "department": "68"
+  },
+  {
+    "city": "CONCEPCION",
+    "code": "207",
+    "department": "68"
+  },
+  {
+    "city": "CONFINES",
+    "code": "209",
+    "department": "68"
+  },
+  {
+    "city": "CONTRATACION",
+    "code": "211",
+    "department": "68"
+  },
+  {
+    "city": "COROMORO",
+    "code": "217",
+    "department": "68"
+  },
+  {
+    "city": "CURITI",
+    "code": "229",
+    "department": "68"
+  },
+  {
+    "city": "EL CARMEN DE CHUCURI",
+    "code": "235",
+    "department": "68"
+  },
+  {
+    "city": "EL GUACAMAYO",
+    "code": "245",
+    "department": "68"
+  },
+  {
+    "city": "EL PEÑON",
+    "code": "250",
+    "department": "68"
+  },
+  {
+    "city": "EL PLAYON",
+    "code": "255",
+    "department": "68"
+  },
+  {
+    "city": "ENCINO",
+    "code": "264",
+    "department": "68"
+  },
+  {
+    "city": "ENCISO",
+    "code": "266",
+    "department": "68"
+  },
+  {
+    "city": "FLORIAN",
+    "code": "271",
+    "department": "68"
+  },
+  {
+    "city": "FLORIDABLANCA",
+    "code": "276",
+    "department": "68"
+  },
+  {
+    "city": "GALAN",
+    "code": "296",
+    "department": "68"
+  },
+  {
+    "city": "GAMBITA",
+    "code": "298",
+    "department": "68"
+  },
+  {
+    "city": "GIRON",
+    "code": "307",
+    "department": "68"
+  },
+  {
+    "city": "GUACA",
+    "code": "318",
+    "department": "68"
+  },
+  {
+    "city": "GUADALUPE",
+    "code": "320",
+    "department": "68"
+  },
+  {
+    "city": "GUAPOTA",
+    "code": "322",
+    "department": "68"
+  },
+  {
+    "city": "GUAVATA",
+    "code": "324",
+    "department": "68"
+  },
+  {
+    "city": "GsEPSA",
+    "code": "327",
+    "department": "68"
+  },
+  {
+    "city": "HATO",
+    "code": "344",
+    "department": "68"
+  },
+  {
+    "city": "JESUS MARIA",
+    "code": "368",
+    "department": "68"
+  },
+  {
+    "city": "JORDAN",
+    "code": "370",
+    "department": "68"
+  },
+  {
+    "city": "LA BELLEZA",
+    "code": "377",
+    "department": "68"
+  },
+  {
+    "city": "LANDAZURI",
+    "code": "385",
+    "department": "68"
+  },
+  {
+    "city": "LA PAZ",
+    "code": "397",
+    "department": "68"
+  },
+  {
+    "city": "LEBRIJA",
+    "code": "406",
+    "department": "68"
+  },
+  {
+    "city": "LOS SANTOS",
+    "code": "418",
+    "department": "68"
+  },
+  {
+    "city": "MACARAVITA",
+    "code": "425",
+    "department": "68"
+  },
+  {
+    "city": "MALAGA",
+    "code": "432",
+    "department": "68"
+  },
+  {
+    "city": "MATANZA",
+    "code": "444",
+    "department": "68"
+  },
+  {
+    "city": "MOGOTES",
+    "code": "464",
+    "department": "68"
+  },
+  {
+    "city": "MOLAGAVITA",
+    "code": "468",
+    "department": "68"
+  },
+  {
+    "city": "OCAMONTE",
+    "code": "498",
+    "department": "68"
+  },
+  {
+    "city": "OIBA",
+    "code": "500",
+    "department": "68"
+  },
+  {
+    "city": "ONZAGA",
+    "code": "502",
+    "department": "68"
+  },
+  {
+    "city": "PALMAR",
+    "code": "522",
+    "department": "68"
+  },
+  {
+    "city": "PALMAS DEL SOCORRO",
+    "code": "524",
+    "department": "68"
+  },
+  {
+    "city": "PARAMO",
+    "code": "533",
+    "department": "68"
+  },
+  {
+    "city": "PIEDECUESTA",
+    "code": "547",
+    "department": "68"
+  },
+  {
+    "city": "PINCHOTE",
+    "code": "549",
+    "department": "68"
+  },
+  {
+    "city": "PUENTE NACIONAL",
+    "code": "572",
+    "department": "68"
+  },
+  {
+    "city": "PUERTO PARRA",
+    "code": "573",
+    "department": "68"
+  },
+  {
+    "city": "PUERTO WILCHES",
+    "code": "575",
+    "department": "68"
+  },
+  {
+    "city": "RIONEGRO",
+    "code": "615",
+    "department": "68"
+  },
+  {
+    "city": "SABANA DE TORRES",
+    "code": "655",
+    "department": "68"
+  },
+  {
+    "city": "SAN ANDRES",
+    "code": "669",
+    "department": "68"
+  },
+  {
+    "city": "SAN BENITO",
+    "code": "673",
+    "department": "68"
+  },
+  {
+    "city": "SAN GIL",
+    "code": "679",
+    "department": "68"
+  },
+  {
+    "city": "SAN JOAQUIN",
+    "code": "682",
+    "department": "68"
+  },
+  {
+    "city": "SAN JOSE DE MIRANDA",
+    "code": "684",
+    "department": "68"
+  },
+  {
+    "city": "SAN MIGUEL",
+    "code": "686",
+    "department": "68"
+  },
+  {
+    "city": "SAN VICENTE DE CHUCURI",
+    "code": "689",
+    "department": "68"
+  },
+  {
+    "city": "SANTA BARBARA",
+    "code": "705",
+    "department": "68"
+  },
+  {
+    "city": "SANTA HELENA DEL OPON",
+    "code": "720",
+    "department": "68"
+  },
+  {
+    "city": "SIMACOTA",
+    "code": "745",
+    "department": "68"
+  },
+  {
+    "city": "SOCORRO",
+    "code": "755",
+    "department": "68"
+  },
+  {
+    "city": "SUAITA",
+    "code": "770",
+    "department": "68"
+  },
+  {
+    "city": "SUCRE",
+    "code": "773",
+    "department": "68"
+  },
+  {
+    "city": "SURATA",
+    "code": "780",
+    "department": "68"
+  },
+  {
+    "city": "TONA",
+    "code": "820",
+    "department": "68"
+  },
+  {
+    "city": "VALLE DE SAN JOSE",
+    "code": "855",
+    "department": "68"
+  },
+  {
+    "city": "VELEZ",
+    "code": "861",
+    "department": "68"
+  },
+  {
+    "city": "VETAS",
+    "code": "867",
+    "department": "68"
+  },
+  {
+    "city": "VILLANUEVA",
+    "code": "872",
+    "department": "68"
+  },
+  {
+    "city": "ZAPATOCA",
+    "code": "895",
+    "department": "68"
+  },
+  {
+    "city": "SINCELEJO",
+    "code": "001",
+    "department": "70"
+  },
+  {
+    "city": "BUENAVISTA",
+    "code": "110",
+    "department": "70"
+  },
+  {
+    "city": "CAIMITO",
+    "code": "124",
+    "department": "70"
+  },
+  {
+    "city": "COLOSO",
+    "code": "204",
+    "department": "70"
+  },
+  {
+    "city": "COROZAL",
+    "code": "215",
+    "department": "70"
+  },
+  {
+    "city": "COVEÑAS",
+    "code": "221",
+    "department": "70"
+  },
+  {
+    "city": "CHALAN",
+    "code": "230",
+    "department": "70"
+  },
+  {
+    "city": "EL ROBLE",
+    "code": "233",
+    "department": "70"
+  },
+  {
+    "city": "GALERAS",
+    "code": "235",
+    "department": "70"
+  },
+  {
+    "city": "GUARANDA",
+    "code": "265",
+    "department": "70"
+  },
+  {
+    "city": "LA UNION",
+    "code": "400",
+    "department": "70"
+  },
+  {
+    "city": "LOS PALMITOS",
+    "code": "418",
+    "department": "70"
+  },
+  {
+    "city": "MAJAGUAL",
+    "code": "429",
+    "department": "70"
+  },
+  {
+    "city": "MORROA",
+    "code": "473",
+    "department": "70"
+  },
+  {
+    "city": "OVEJAS",
+    "code": "508",
+    "department": "70"
+  },
+  {
+    "city": "PALMITO",
+    "code": "523",
+    "department": "70"
+  },
+  {
+    "city": "SAMPUES",
+    "code": "670",
+    "department": "70"
+  },
+  {
+    "city": "SAN BENITO ABAD",
+    "code": "678",
+    "department": "70"
+  },
+  {
+    "city": "SAN JUAN DE BETULIA",
+    "code": "702",
+    "department": "70"
+  },
+  {
+    "city": "SAN MARCOS",
+    "code": "708",
+    "department": "70"
+  },
+  {
+    "city": "SAN ONOFRE",
+    "code": "713",
+    "department": "70"
+  },
+  {
+    "city": "SAN PEDRO",
+    "code": "717",
+    "department": "70"
+  },
+  {
+    "city": "SAN LUIS DE SINCE",
+    "code": "742",
+    "department": "70"
+  },
+  {
+    "city": "SUCRE",
+    "code": "771",
+    "department": "70"
+  },
+  {
+    "city": "SANTIAGO DE TOLU",
+    "code": "820",
+    "department": "70"
+  },
+  {
+    "city": "TOLU VIEJO",
+    "code": "823",
+    "department": "70"
+  },
+  {
+    "city": "IBAGUE",
+    "code": "001",
+    "department": "73"
+  },
+  {
+    "city": "ALPUJARRA",
+    "code": "024",
+    "department": "73"
+  },
+  {
+    "city": "ALVARADO",
+    "code": "026",
+    "department": "73"
+  },
+  {
+    "city": "AMBALEMA",
+    "code": "030",
+    "department": "73"
+  },
+  {
+    "city": "ANZOATEGUI",
+    "code": "043",
+    "department": "73"
+  },
+  {
+    "city": "ARMERO",
+    "code": "055",
+    "department": "73"
+  },
+  {
+    "city": "ATACO",
+    "code": "067",
+    "department": "73"
+  },
+  {
+    "city": "CAJAMARCA",
+    "code": "124",
+    "department": "73"
+  },
+  {
+    "city": "CARMEN DE APICALA",
+    "code": "148",
+    "department": "73"
+  },
+  {
+    "city": "CASABIANCA",
+    "code": "152",
+    "department": "73"
+  },
+  {
+    "city": "CHAPARRAL",
+    "code": "168",
+    "department": "73"
+  },
+  {
+    "city": "COELLO",
+    "code": "200",
+    "department": "73"
+  },
+  {
+    "city": "COYAIMA",
+    "code": "217",
+    "department": "73"
+  },
+  {
+    "city": "CUNDAY",
+    "code": "226",
+    "department": "73"
+  },
+  {
+    "city": "DOLORES",
+    "code": "236",
+    "department": "73"
+  },
+  {
+    "city": "ESPINAL",
+    "code": "268",
+    "department": "73"
+  },
+  {
+    "city": "FALAN",
+    "code": "270",
+    "department": "73"
+  },
+  {
+    "city": "FLANDES",
+    "code": "275",
+    "department": "73"
+  },
+  {
+    "city": "FRESNO",
+    "code": "283",
+    "department": "73"
+  },
+  {
+    "city": "GUAMO",
+    "code": "319",
+    "department": "73"
+  },
+  {
+    "city": "HERVEO",
+    "code": "347",
+    "department": "73"
+  },
+  {
+    "city": "HONDA",
+    "code": "349",
+    "department": "73"
+  },
+  {
+    "city": "ICONONZO",
+    "code": "352",
+    "department": "73"
+  },
+  {
+    "city": "LERIDA",
+    "code": "408",
+    "department": "73"
+  },
+  {
+    "city": "LIBANO",
+    "code": "411",
+    "department": "73"
+  },
+  {
+    "city": "MARIQUITA",
+    "code": "443",
+    "department": "73"
+  },
+  {
+    "city": "MELGAR",
+    "code": "449",
+    "department": "73"
+  },
+  {
+    "city": "MURILLO",
+    "code": "461",
+    "department": "73"
+  },
+  {
+    "city": "NATAGAIMA",
+    "code": "483",
+    "department": "73"
+  },
+  {
+    "city": "ORTEGA",
+    "code": "504",
+    "department": "73"
+  },
+  {
+    "city": "PALOCABILDO",
+    "code": "520",
+    "department": "73"
+  },
+  {
+    "city": "PIEDRAS",
+    "code": "547",
+    "department": "73"
+  },
+  {
+    "city": "PLANADAS",
+    "code": "555",
+    "department": "73"
+  },
+  {
+    "city": "PRADO",
+    "code": "563",
+    "department": "73"
+  },
+  {
+    "city": "PURIFICACION",
+    "code": "585",
+    "department": "73"
+  },
+  {
+    "city": "RIOBLANCO",
+    "code": "616",
+    "department": "73"
+  },
+  {
+    "city": "RONCESVALLES",
+    "code": "622",
+    "department": "73"
+  },
+  {
+    "city": "ROVIRA",
+    "code": "624",
+    "department": "73"
+  },
+  {
+    "city": "SALDAÑA",
+    "code": "671",
+    "department": "73"
+  },
+  {
+    "city": "SAN ANTONIO",
+    "code": "675",
+    "department": "73"
+  },
+  {
+    "city": "SAN LUIS",
+    "code": "678",
+    "department": "73"
+  },
+  {
+    "city": "SANTA ISABEL",
+    "code": "686",
+    "department": "73"
+  },
+  {
+    "city": "SUAREZ",
+    "code": "770",
+    "department": "73"
+  },
+  {
+    "city": "VALLE DE SAN JUAN",
+    "code": "854",
+    "department": "73"
+  },
+  {
+    "city": "VENADILLO",
+    "code": "861",
+    "department": "73"
+  },
+  {
+    "city": "VILLAHERMOSA",
+    "code": "870",
+    "department": "73"
+  },
+  {
+    "city": "VILLARRICA",
+    "code": "873",
+    "department": "73"
+  },
+  {
+    "city": "CALI",
+    "code": "001",
+    "department": "76"
+  },
+  {
+    "city": "ALCALA",
+    "code": "020",
+    "department": "76"
+  },
+  {
+    "city": "ANDALUCIA",
+    "code": "036",
+    "department": "76"
+  },
+  {
+    "city": "ANSERMANUEVO",
+    "code": "041",
+    "department": "76"
+  },
+  {
+    "city": "ARGELIA",
+    "code": "054",
+    "department": "76"
+  },
+  {
+    "city": "BOLIVAR",
+    "code": "100",
+    "department": "76"
+  },
+  {
+    "city": "BUENAVENTURA",
+    "code": "109",
+    "department": "76"
+  },
+  {
+    "city": "GUADALAJARA DE BUGA",
+    "code": "111",
+    "department": "76"
+  },
+  {
+    "city": "BUGALAGRANDE",
+    "code": "113",
+    "department": "76"
+  },
+  {
+    "city": "CAICEDONIA",
+    "code": "122",
+    "department": "76"
+  },
+  {
+    "city": "CALIMA",
+    "code": "126",
+    "department": "76"
+  },
+  {
+    "city": "CANDELARIA",
+    "code": "130",
+    "department": "76"
+  },
+  {
+    "city": "CARTAGO",
+    "code": "147",
+    "department": "76"
+  },
+  {
+    "city": "DAGUA",
+    "code": "233",
+    "department": "76"
+  },
+  {
+    "city": "EL AGUILA",
+    "code": "243",
+    "department": "76"
+  },
+  {
+    "city": "EL CAIRO",
+    "code": "246",
+    "department": "76"
+  },
+  {
+    "city": "EL CERRITO",
+    "code": "248",
+    "department": "76"
+  },
+  {
+    "city": "EL DOVIO",
+    "code": "250",
+    "department": "76"
+  },
+  {
+    "city": "FLORIDA",
+    "code": "275",
+    "department": "76"
+  },
+  {
+    "city": "GINEBRA",
+    "code": "306",
+    "department": "76"
+  },
+  {
+    "city": "GUACARI",
+    "code": "318",
+    "department": "76"
+  },
+  {
+    "city": "JAMUNDI",
+    "code": "364",
+    "department": "76"
+  },
+  {
+    "city": "LA CUMBRE",
+    "code": "377",
+    "department": "76"
+  },
+  {
+    "city": "LA UNION",
+    "code": "400",
+    "department": "76"
+  },
+  {
+    "city": "LA VICTORIA",
+    "code": "403",
+    "department": "76"
+  },
+  {
+    "city": "OBANDO",
+    "code": "497",
+    "department": "76"
+  },
+  {
+    "city": "PALMIRA",
+    "code": "520",
+    "department": "76"
+  },
+  {
+    "city": "PRADERA",
+    "code": "563",
+    "department": "76"
+  },
+  {
+    "city": "RESTREPO",
+    "code": "606",
+    "department": "76"
+  },
+  {
+    "city": "RIOFRIO",
+    "code": "616",
+    "department": "76"
+  },
+  {
+    "city": "ROLDANILLO",
+    "code": "622",
+    "department": "76"
+  },
+  {
+    "city": "SAN PEDRO",
+    "code": "670",
+    "department": "76"
+  },
+  {
+    "city": "SEVILLA",
+    "code": "736",
+    "department": "76"
+  },
+  {
+    "city": "TORO",
+    "code": "823",
+    "department": "76"
+  },
+  {
+    "city": "TRUJILLO",
+    "code": "828",
+    "department": "76"
+  },
+  {
+    "city": "TULUA",
+    "code": "834",
+    "department": "76"
+  },
+  {
+    "city": "ULLOA",
+    "code": "845",
+    "department": "76"
+  },
+  {
+    "city": "VERSALLES",
+    "code": "863",
+    "department": "76"
+  },
+  {
+    "city": "VIJES",
+    "code": "869",
+    "department": "76"
+  },
+  {
+    "city": "YOTOCO",
+    "code": "890",
+    "department": "76"
+  },
+  {
+    "city": "YUMBO",
+    "code": "892",
+    "department": "76"
+  },
+  {
+    "city": "ZARZAL",
+    "code": "895",
+    "department": "76"
+  },
+  {
+    "city": "ARAUCA",
+    "code": "001",
+    "department": "81"
+  },
+  {
+    "city": "ARAUQUITA",
+    "code": "065",
+    "department": "81"
+  },
+  {
+    "city": "CRAVO NORTE",
+    "code": "220",
+    "department": "81"
+  },
+  {
+    "city": "FORTUL",
+    "code": "300",
+    "department": "81"
+  },
+  {
+    "city": "PUERTO RONDON",
+    "code": "591",
+    "department": "81"
+  },
+  {
+    "city": "SARAVENA",
+    "code": "736",
+    "department": "81"
+  },
+  {
+    "city": "TAME",
+    "code": "794",
+    "department": "81"
+  },
+  {
+    "city": "YOPAL",
+    "code": "001",
+    "department": "85"
+  },
+  {
+    "city": "AGUAZUL",
+    "code": "010",
+    "department": "85"
+  },
+  {
+    "city": "CHAMEZA",
+    "code": "015",
+    "department": "85"
+  },
+  {
+    "city": "HATO COROZAL",
+    "code": "125",
+    "department": "85"
+  },
+  {
+    "city": "LA SALINA",
+    "code": "136",
+    "department": "85"
+  },
+  {
+    "city": "MANI",
+    "code": "139",
+    "department": "85"
+  },
+  {
+    "city": "MONTERREY",
+    "code": "162",
+    "department": "85"
+  },
+  {
+    "city": "NUNCHIA",
+    "code": "225",
+    "department": "85"
+  },
+  {
+    "city": "OROCUE",
+    "code": "230",
+    "department": "85"
+  },
+  {
+    "city": "PAZ DE ARIPORO",
+    "code": "250",
+    "department": "85"
+  },
+  {
+    "city": "PORE",
+    "code": "263",
+    "department": "85"
+  },
+  {
+    "city": "RECETOR",
+    "code": "279",
+    "department": "85"
+  },
+  {
+    "city": "SABANALARGA",
+    "code": "300",
+    "department": "85"
+  },
+  {
+    "city": "SACAMA",
+    "code": "315",
+    "department": "85"
+  },
+  {
+    "city": "SAN LUIS DE PALENQUE",
+    "code": "325",
+    "department": "85"
+  },
+  {
+    "city": "TAMARA",
+    "code": "400",
+    "department": "85"
+  },
+  {
+    "city": "TAURAMENA",
+    "code": "410",
+    "department": "85"
+  },
+  {
+    "city": "TRINIDAD",
+    "code": "430",
+    "department": "85"
+  },
+  {
+    "city": "VILLANUEVA",
+    "code": "440",
+    "department": "85"
+  },
+  {
+    "city": "MOCOA",
+    "code": "001",
+    "department": "86"
+  },
+  {
+    "city": "COLON",
+    "code": "219",
+    "department": "86"
+  },
+  {
+    "city": "ORITO",
+    "code": "320",
+    "department": "86"
+  },
+  {
+    "city": "PUERTO ASIS",
+    "code": "568",
+    "department": "86"
+  },
+  {
+    "city": "PUERTO CAICEDO",
+    "code": "569",
+    "department": "86"
+  },
+  {
+    "city": "PUERTO GUZMAN",
+    "code": "571",
+    "department": "86"
+  },
+  {
+    "city": "LEGUIZAMO",
+    "code": "573",
+    "department": "86"
+  },
+  {
+    "city": "SIBUNDOY",
+    "code": "749",
+    "department": "86"
+  },
+  {
+    "city": "SAN FRANCISCO",
+    "code": "755",
+    "department": "86"
+  },
+  {
+    "city": "SAN MIGUEL",
+    "code": "757",
+    "department": "86"
+  },
+  {
+    "city": "SANTIAGO",
+    "code": "760",
+    "department": "86"
+  },
+  {
+    "city": "VALLE DEL GUAMUEZ",
+    "code": "865",
+    "department": "86"
+  },
+  {
+    "city": "VILLAGARZON",
+    "code": "885",
+    "department": "86"
+  },
+  {
+    "city": "SAN ANDRES",
+    "code": "001",
+    "department": "88"
+  },
+  {
+    "city": "PROVIDENCIA",
+    "code": "564",
+    "department": "88"
+  },
+  {
+    "city": "LETICIA",
+    "code": "001",
+    "department": "91"
+  },
+  {
+    "city": "EL ENCANTO",
+    "code": "263",
+    "department": "91"
+  },
+  {
+    "city": "LA CHORRERA",
+    "code": "405",
+    "department": "91"
+  },
+  {
+    "city": "LA PEDRERA",
+    "code": "407",
+    "department": "91"
+  },
+  {
+    "city": "LA VICTORIA",
+    "code": "430",
+    "department": "91"
+  },
+  {
+    "city": "MIRITI - PARANA",
+    "code": "460",
+    "department": "91"
+  },
+  {
+    "city": "PUERTO ALEGRIA",
+    "code": "530",
+    "department": "91"
+  },
+  {
+    "city": "PUERTO ARICA",
+    "code": "536",
+    "department": "91"
+  },
+  {
+    "city": "PUERTO NARIÑO",
+    "code": "540",
+    "department": "91"
+  },
+  {
+    "city": "PUERTO SANTANDER",
+    "code": "669",
+    "department": "91"
+  },
+  {
+    "city": "TARAPACA",
+    "code": "798",
+    "department": "91"
+  },
+  {
+    "city": "INIRIDA",
+    "code": "001",
+    "department": "94"
+  },
+  {
+    "city": "BARRANCO MINAS",
+    "code": "343",
+    "department": "94"
+  },
+  {
+    "city": "MAPIRIPANA",
+    "code": "663",
+    "department": "94"
+  },
+  {
+    "city": "SAN FELIPE",
+    "code": "883",
+    "department": "94"
+  },
+  {
+    "city": "PUERTO COLOMBIA",
+    "code": "884",
+    "department": "94"
+  },
+  {
+    "city": "LA GUADALUPE",
+    "code": "885",
+    "department": "94"
+  },
+  {
+    "city": "CACAHUAL",
+    "code": "886",
+    "department": "94"
+  },
+  {
+    "city": "PANA PANA",
+    "code": "887",
+    "department": "94"
+  },
+  {
+    "city": "MORICHAL",
+    "code": "888",
+    "department": "94"
+  },
+  {
+    "city": "SAN JOSE DEL GUAVIARE",
+    "code": "001",
+    "department": "95"
+  },
+  {
+    "city": "CALAMAR",
+    "code": "015",
+    "department": "95"
+  },
+  {
+    "city": "EL RETORNO",
+    "code": "025",
+    "department": "95"
+  },
+  {
+    "city": "MIRAFLORES",
+    "code": "200",
+    "department": "95"
+  },
+  {
+    "city": "MITU",
+    "code": "001",
+    "department": "97"
+  },
+  {
+    "city": "CARURU",
+    "code": "161",
+    "department": "97"
+  },
+  {
+    "city": "PACOA",
+    "code": "511",
+    "department": "97"
+  },
+  {
+    "city": "TARAIRA",
+    "code": "666",
+    "department": "97"
+  },
+  {
+    "city": "PAPUNAUA",
+    "code": "777",
+    "department": "97"
+  },
+  {
+    "city": "YAVARATE",
+    "code": "889",
+    "department": "97"
+  },
+  {
+    "city": "PUERTO CARREÑO",
+    "code": "001",
+    "department": "99"
+  },
+  {
+    "city": "LA PRIMAVERA",
+    "code": "524",
+    "department": "99"
+  },
+  {
+    "city": "SANTA ROSALIA",
+    "code": "624",
+    "department": "99"
+  },
+  {
+    "city": "CUMARIBO",
+    "code": "773",
+    "department": "99"
+  }
+]
