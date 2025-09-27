@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import NewClientForm from "../forms/NewClientForm";
+import NewClientForm from "../forms/ClientForm";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { createClient } from "../../../api/ClientAPI";
 import { toast } from "react-toastify";
@@ -12,6 +12,7 @@ export default function NewClientModal() {
   const {
     register,
     handleSubmit,
+    watch,
     reset,
     formState: { errors },
   } = useForm<ClientForm>();
@@ -42,6 +43,7 @@ export default function NewClientModal() {
             <NewClientForm 
               register={register}
               errors={errors}
+              watch={watch}
             />
             <div className="flex justify-end gap-2">
               <button

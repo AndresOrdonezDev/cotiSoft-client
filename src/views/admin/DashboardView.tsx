@@ -1,13 +1,18 @@
+import EditClientModal from "../../components/admin/modals/EditClientModal";
 import NewClientModal from "../../components/admin/modals/NewClientModal";
 import Sidebar from "../../components/shared/Sidebar";
-import { Outlet, useSearchParams} from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 
 export default function DashboardView() {
-  const [searchParams] = useSearchParams();
+  const { search } = useLocation();
+  const query = new URLSearchParams(search);
 
-
-  const isNewClientOpen = searchParams.get("newClient") === "true";
+  const modals = {
+    showModalNewClient: query.has("newClient"),
+    showModalEditClient: query.has("editClient"),
+    clientId: query.get("clientId"),
+  };
 
   return (
     <div className="flex h-screen overflow-hidden">
@@ -18,8 +23,11 @@ export default function DashboardView() {
       </main>
 
       {/* Modal global */}
-      {isNewClientOpen && (
-        <NewClientModal/>
+      {modals.showModalNewClient && (
+        <NewClientModal />
+      )}
+      {modals.showModalEditClient && (
+        <EditClientModal/>
       )}
     </div>
   );

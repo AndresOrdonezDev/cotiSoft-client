@@ -1,28 +1,24 @@
 import departments from '../../../data/departments.json'
 import cities from '../../../data/cities.json'
-import { useState } from "react";
-import type { FieldErrors, UseFormRegister } from 'react-hook-form';
+import { useMemo} from "react";
+import type { FieldErrors, UseFormRegister, UseFormWatch } from 'react-hook-form';
 import type { ClientForm } from '../../../types/client';
 
 type NewClientFormProps = {
   register: UseFormRegister<ClientForm>
   errors: FieldErrors<ClientForm>
+  watch: UseFormWatch<ClientForm>
 }
 
-export default function NewClientForm({ register, errors }: NewClientFormProps) {
-  type City = {
-    city: string;
-    code: string;
-    department: string;
-  };
+export default function NewClientForm({ register, errors,watch }: NewClientFormProps) {
 
-  const [citiesFiltered, setCitiesFiltered] = useState<City[] | undefined>(undefined);
+  const selectedDepartment = watch("department");
+   
+  const citiesFiltered = useMemo(() => {
+    if (!selectedDepartment) return [];
+    return cities.filter(city => city.department === selectedDepartment);
+  }, [selectedDepartment]);
 
-  const citiesByDepartmentSelected = async (codeDepartment: string) => {
-    const citiesDepartment = await cities.filter(city => city.department === codeDepartment)
-    setCitiesFiltered(citiesDepartment)
-    return citiesDepartment
-  }
   return (
     <>
       <div>
@@ -140,7 +136,6 @@ export default function NewClientForm({ register, errors }: NewClientFormProps) 
           {...register("department", {
             required: "Seleccione un departamento",
           })}
-          onChange={(e) => citiesByDepartmentSelected(e.target.value)}
         >
           <option value="">-- Seleccione un departamento --</option>
           {departments.map(item => (
@@ -153,13 +148,12 @@ export default function NewClientForm({ register, errors }: NewClientFormProps) 
           </p>
         )}
       </div>
-      {citiesFiltered && <div>
+      {citiesFiltered.length > 0 && <div>
         <select
           className="w-full border rounded px-3 py-2"
           {...register("city", {
             required: "Seleccione una ciudad",
           })}
-        // onChange={(e) => citiesByDepartmentSelected(e.target.value)}
         >
           <option value="">-- Seleccione una ciudad--</option>
           {citiesFiltered.map(item => (
