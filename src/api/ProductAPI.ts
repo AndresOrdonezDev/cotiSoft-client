@@ -14,10 +14,13 @@ export async function createProduct(formData:ProductForm){
         throw new Error('Error al crear el producto')
     }
 }
-
-export async function getProducts() {
+type getProductsProps = {
+  isActive: number
+  search: string
+}
+export async function getProducts({isActive,search}:getProductsProps) {
     try {
-        const { data } = await api('/product')
+        const { data } = await api(`/product?isActive=${isActive}&search=${encodeURIComponent(search)}`)
         const result = productSchemaAPI.safeParse(data)
         if (result.success) {
             return result.data
@@ -62,5 +65,18 @@ export async function updateProduct({ id, formData }: updateProductProps) {
             throw error.response?.data
         }
         throw new Error('Error al actualizar el producto')
+    }
+}
+
+export async function toggleProductActive(id: Product['id']) {
+    try {
+        const { data } = await api.post(`/product/${id}`)
+        return data
+    } catch (error) {
+        if (isAxiosError(error)) {
+            console.log(error.response?.data)
+            throw error.response?.data
+        }
+        throw new Error('Error al actualizar el cliente')
     }
 }

@@ -16,7 +16,7 @@ export async function createClient(formData: ClientForm) {
 }
 type getClientsProps = {
   isActive: number
-  search?: string
+  search: string
 }
 export async function getClients({ isActive, search = "" }: getClientsProps) {
   try {

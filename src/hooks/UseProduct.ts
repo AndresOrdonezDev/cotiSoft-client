@@ -2,10 +2,10 @@ import { useQuery } from "@tanstack/react-query"
 import { getProductById, getProducts } from "../api/ProductAPI"
 import type { Product } from "../types/product"
 
-export const useProducts = () => {
+export const useProducts = (isActive:number,search:string) => {
     const { data, isError, isLoading } = useQuery({
-        queryKey: ['products'],
-        queryFn: getProducts,
+        queryKey: ['products',isActive,search],
+        queryFn: ()=> getProducts({isActive,search}),
         retry: false,
         refetchOnWindowFocus: false
     })

@@ -6,7 +6,6 @@ export async function getQuotes(){
     try {
         const {data} = await api('/quote')
         const result = quoteSchemaAPI.safeParse(data)
-        console.log(data)
         if(result.success){
             return result.data
         }
