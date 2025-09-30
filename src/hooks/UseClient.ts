@@ -11,6 +11,7 @@ export const useClients = (isActive: number, search: string) => {
   })
   return { data, isError, isLoading }
 }
+
 export const useClientById = (id:Client['id']) => {
     const { data, isError, isLoading } = useQuery({
         queryKey: ['client',id],
