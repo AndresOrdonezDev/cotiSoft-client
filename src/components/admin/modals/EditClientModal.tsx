@@ -60,7 +60,7 @@ export default function EditClientModal() {
     return (
         <div className="fixed inset-0 flex items-start justify-center bg-black/70 z-10 overflow-y-auto">
             <div className="bg-white rounded-xl shadow-lg w-full max-w-lg mt-10 p-6 flex flex-col max-h-[90vh]">
-                <h2 className="text-xl font-bold mb-4 flex-shrink-0">Editar Cliente</h2>
+                <h2 className="text-xl font-bold mb-4 flex-shrink-0 text-gray-700">Editar Cliente</h2>
                 <div className="overflow-y-auto pr-2 flex-1">
                     <form
                         noValidate

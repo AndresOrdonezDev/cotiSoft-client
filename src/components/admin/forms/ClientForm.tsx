@@ -4,13 +4,13 @@ import { useMemo} from "react";
 import type { FieldErrors, UseFormRegister, UseFormWatch } from 'react-hook-form';
 import type { ClientForm } from '../../../types/client';
 
-type NewClientFormProps = {
+type ClientFormProps = {
   register: UseFormRegister<ClientForm>
   errors: FieldErrors<ClientForm>
   watch: UseFormWatch<ClientForm>
 }
 
-export default function NewClientForm({ register, errors,watch }: NewClientFormProps) {
+export default function ClientForm({ register, errors,watch }: ClientFormProps) {
 
   const selectedDepartment = watch("department");
    

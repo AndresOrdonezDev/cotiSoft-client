@@ -13,5 +13,6 @@ export const productSchema = z.object({
   updatedAt: z.string(),
 });
 
-export type Product = z.infer<typeof productSchema>;
 export const productSchemaAPI = z.array(productSchema);
+export type Product = z.infer<typeof productSchema>;
+export type ProductForm = Pick<Product, "name"|"description"|"price"|"tax"|"productType"|"stock">

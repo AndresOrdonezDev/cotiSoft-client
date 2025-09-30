@@ -4,7 +4,10 @@ export default function AdminLayout() {
   return (
     <div>
       <Outlet/>
-      <ToastContainer/>
+      <ToastContainer
+        position="top-center"
+        pauseOnHover={false}
+      />
     </div>
   )
 }

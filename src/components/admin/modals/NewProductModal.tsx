@@ -1,49 +1,50 @@
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import NewClientForm from "../forms/ClientForm";
+import NewProductForm from "../forms/ProductForm";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { createClient } from "../../../api/ClientAPI";
+import { createProduct } from "../../../api/ProductAPI";
 import { toast } from "react-toastify";
-import type { ClientForm } from "../../../types/client";
+import type { ProductForm } from "../../../types/product";
 
-export default function NewClientModal() {
+export default function NewProductModal() {
   const navigate = useNavigate();
-  const queryClient = useQueryClient()
+  const queryClient = useQueryClient();
+
   const {
     register,
     handleSubmit,
-    watch,
     reset,
     formState: { errors },
-  } = useForm<ClientForm>();
+  } = useForm<ProductForm>();
 
   const { mutate } = useMutation({
-    mutationFn: createClient,
-    onError: (data) => toast.error(data.message),
-    onSuccess: (data) => {
-      toast.success(data.message)
-      reset()
-      queryClient.invalidateQueries({queryKey:["clients"]})
-      navigate(-1)
-    }
-  })
-  const handleCreateNewClient = (formData: ClientForm) => {
-    mutate(formData)
+    mutationFn: createProduct,
+    onError: (data: any) => toast.error(data.message),
+    onSuccess: (data: any) => {
+      toast.success(data.message);
+      reset();
+      queryClient.invalidateQueries({ queryKey: ["products"] });
+      navigate(-1);
+    },
+  });
+
+  const handleCreateNewProduct = (formData: ProductForm) => {
+    mutate(formData);
   };
+
   return (
     <div className="fixed inset-0 flex items-start justify-center bg-black/70 z-10 overflow-y-auto">
       <div className="bg-white rounded-xl shadow-lg w-full max-w-lg mt-10 p-6 flex flex-col max-h-[90vh]">
-        <h2 className="text-xl font-bold mb-4 flex-shrink-0 text-gray-700">Nuevo Cliente</h2>
+        <h2 className="text-xl font-bold mb-4 flex-shrink-0 text-gray-700">Nuevo Producto</h2>
         <div className="overflow-y-auto pr-2 flex-1">
           <form
             noValidate
-            onSubmit={handleSubmit(handleCreateNewClient)}
+            onSubmit={handleSubmit(handleCreateNewProduct)}
             className="space-y-4"
           >
-            <NewClientForm 
+            <NewProductForm 
               register={register}
               errors={errors}
-              watch={watch}
             />
             <div className="flex justify-end gap-2">
               <button
