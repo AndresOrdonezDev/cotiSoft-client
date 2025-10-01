@@ -17,3 +17,18 @@ const quoteSchema = z.object({
 export const quoteSchemaAPI = z.array(quoteSchema)
 export type Quote = z.infer<typeof quoteSchema>
 
+const quoteProductsSchema = z.object({
+    client_id:z.number(),
+    notes:z.string(),
+    total:z.number(),
+    products:z.array(
+        z.object({
+            product_id:z.number(),
+            price:z.number(),
+            quantity:z.number(),
+            tax:z.number()
+        })
+    )
+})
+export type QuoteProducts = z.infer<typeof quoteProductsSchema>
+export type QuoteProductsForm = Pick<QuoteProducts, "client_id"|"notes"|"products"|"total">

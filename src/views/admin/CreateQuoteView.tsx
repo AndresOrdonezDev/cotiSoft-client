@@ -1,18 +1,23 @@
-import { useState } from "react"
-import { FiPlus, FiXCircle } from "react-icons/fi";
+import { useEffect, useState } from "react"
+import { FiPlus } from "react-icons/fi";
 import UploadProductsModal from "../../components/admin/modals/UploadProductsModal";
 import QuoteSearchClientBar from "../../components/admin/searchBars/QuoteSearchClientBar";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { getClient } from "../../api/ClientAPI";
 import { toast } from "react-toastify";
-import type { Product } from "../../types/product";
+import type { ProductQuote } from "../../types/product";
+import QuoteProductCard from "../../components/admin/cards/QuoteProductCard";
+import type { QuoteProductsForm } from "../../types/quote";
+import { createQuote } from "../../api/QuoteAPI";
 import { formatCurrency } from "../../utils";
 
 export default function CreateQuoteView() {
   const [showModalUploadProducts, setShowModalUploadProducts] = useState(false)
   const [searchInput, setSearchInput] = useState("")
-  const [productsToQuote, setProductsToQuote] = useState<Product[]>([])
-
+  const [productsToQuote, setProductsToQuote] = useState<ProductQuote[]>([])
+  const [totalQuote, setTotalQuote] = useState(0)
+  const [notes,setNotes] = useState("")
+  const queryClient = useQueryClient()
   const mutateSearchClient = useMutation({
     mutationFn: getClient,
     onError: (data) => toast.error(data.message),
@@ -21,13 +26,55 @@ export default function CreateQuoteView() {
     }
   })
   const handleSearch = () => {
+    if(!searchInput)return toast.warn('Ingrese el valor a buscar')
     mutateSearchClient.mutate(searchInput)
   }
-
-  const handleAddProduct = (product: Product) => {
-    console.log(product)
+  const handleAddProduct = (product: ProductQuote) => {
+    const productExistOnQuote = productsToQuote.some(p => p.product_id === product.product_id)
+    if (productExistOnQuote) return increaseQuantity(product.product_id)
     setProductsToQuote(products => [...products, product])
     toast.success('Producto Agregado')
+  }
+  const increaseQuantity = (id: ProductQuote['product_id']) => {
+    const updateList = productsToQuote.map(product => {
+      if (product.product_id === id) {
+        return {
+          ...product,
+          quantity: product.quantity + 1
+        };
+      }
+
+      return product;
+    });
+    setProductsToQuote(updateList);
+    //localStorage.setItem("quote", JSON.stringify(updateList))
+  };
+  useEffect(() => {
+    const total = productsToQuote.reduce((total, product) => (product.price * product.quantity) + total, 0)
+    setTotalQuote(total)
+  }, [productsToQuote])
+
+  const { mutate } = useMutation({
+    mutationFn: createQuote,
+    onError: (data) => toast.error(data.message),
+    onSuccess: (data) => {
+      toast.success(data.message)
+      setProductsToQuote([])
+      setNotes("")
+      mutateSearchClient.reset()
+      queryClient.invalidateQueries({queryKey: ["quotes"]})
+    }
+  })
+  const handleSendQuote = () => {
+    const { data } = mutateSearchClient
+    if (!data) return toast.error("Error al tomar el cliente")
+    const dataQuote: QuoteProductsForm = {
+      client_id: mutateSearchClient.data.id,
+      notes,
+      total: totalQuote,
+      products: productsToQuote
+    }
+    mutate(dataQuote)
   }
   return (
     <div className="max-w-6xl mx-auto py-12 text-gray-700 ">
@@ -49,7 +96,11 @@ export default function CreateQuoteView() {
                 <p className="font-bold">{mutateSearchClient.data.contact}</p>
               </div>
             </>}
-          <div className="flex justify-end mt-5">
+          <div className="flex justify-end mt-5 gap-5">
+            {productsToQuote.length > 0 && <button
+              onClick={handleSendQuote}
+              className="border text-sm font-semibold cursor-pointer border-slate-600 bg-slate-600 px-2 rounded-lg text-white hover:bg-slate-700 hover:border-slate-700 transition-all"
+            >Guardar y Enviar</button>}
             <button
               disabled={mutateSearchClient.data ? false : true}
               onClick={() => setShowModalUploadProducts(true)}
@@ -59,42 +110,38 @@ export default function CreateQuoteView() {
                 }`}
             ><FiPlus size={18} />Agregar Productos</button>
           </div>
+          {productsToQuote.length > 0 && <div>
+            <input
+              onChange={(e)=>setNotes(e.target.value)}
+              className="w-full border-2 mt-5 rounded p-2"
+              type="text"
+              value={notes}
+              placeholder="Observaciones"
+            />
+          </div>}
 
         </div>
         <div className="bg-white shadow-lg rounded-lg">
           {productsToQuote.length ? (<>
             <div className="p-5 flex items-center justify-between">
               <h2 className="font-bold text-xl">Productos Agregados:</h2>
-              <button
-                className="border text-sm font-semibold cursor-pointer border-slate-600 bg-slate-600 px-2 rounded text-white hover:bg-slate-700 hover:border-slate-700 transition-all"
-              >Guardar y Enviar</button>
+              <div>
+                <p>Total: <span className="text-sm font-semibold">{formatCurrency(totalQuote)}</span></p>
+              </div>
             </div>
             <div className="max-h-svh overflow-y-scroll pb-5">
               {productsToQuote.map(product => (
-                <div
-                  key={product.id}
-                  className="px-5 py-2 border-2 border-gray-100 flex justify-between"
-                >
-                  <div className="flex flex-col w-full">
-                    <p>{product.name}</p>
-                    <p>{product.description}</p>
-                    <p>{formatCurrency(product.price)}</p>
-                  </div>
-                  <div className="flex items-center gap-5">
-                    <input
-                      className="max-w-10 text-center border border-gray-700 rounded"
-                      type="number"
-                    />
-                    <button className="text-red-600 cursor-pointer">
-                      <FiXCircle size={20} />
-                    </button>
-                  </div>
-                </div>
+                <QuoteProductCard
+                  key={product.product_id}
+                  product={product}
+                  productsToQuote={productsToQuote}
+                  setProductsToQuote={setProductsToQuote}
+                  increaseQuantity={increaseQuantity}
+                />
               ))}
             </div>
-
           </>) : (
-            <p className="text-center mt-10">Aún no has agregado productos</p>
+            <p className="text-center my-10">Aún no has agregado productos</p>
           )}
         </div>
       </div>

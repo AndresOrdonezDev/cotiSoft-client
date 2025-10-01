@@ -16,3 +16,15 @@ export const productSchema = z.object({
 export const productSchemaAPI = z.array(productSchema);
 export type Product = z.infer<typeof productSchema>;
 export type ProductForm = Pick<Product, "name"|"description"|"price"|"tax"|"productType"|"stock">
+
+//to quote
+const ProductQuoteSchema = productSchema.pick({
+  name: true,
+  description: true,
+  price:true,
+  tax: true
+}).extend({
+  quantity:z.number(),
+  product_id:z.number()
+})
+export type ProductQuote = z.infer<typeof ProductQuoteSchema>

@@ -1,9 +1,9 @@
 import { FiPlusCircle } from "react-icons/fi"
-import type { Product } from "../../../types/product"
+import type { Product, ProductQuote } from "../../../types/product"
 import { formatCurrency } from "../../../utils"
 type UploadProductCardProps = {
     product:Product,
-    handleAddProduct: (product:Product) => void
+    handleAddProduct: (product:ProductQuote) => void
 }
 export default function UploadProductCard({product,handleAddProduct}:UploadProductCardProps) {
     
@@ -16,7 +16,7 @@ export default function UploadProductCard({product,handleAddProduct}:UploadProdu
             <p>{formatCurrency(product.price)}</p>
             <div>
                 <button 
-                    onClick={()=>handleAddProduct(product)}
+                    onClick={()=>handleAddProduct({...product, quantity:1,product_id:product.id})}
                 >
                     <FiPlusCircle
                         size={20}

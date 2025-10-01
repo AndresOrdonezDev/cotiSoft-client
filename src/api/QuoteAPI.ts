@@ -1,6 +1,19 @@
 import {isAxiosError} from 'axios'
 import api from '../lib/axios'
-import { quoteSchemaAPI } from '../types/quote'
+import { quoteSchemaAPI, type QuoteProductsForm } from '../types/quote'
+
+export async function createQuote(formData:QuoteProductsForm){
+    try {
+        const {data} = await api.post('/quote',formData)
+        return data
+    } catch (error) {
+        if(isAxiosError(error)){
+            console.error('Error al crear la cotización:', error.response?.data || error.message);
+            throw error;
+        }
+        throw new Error('Error al crear la cotización')
+    }
+}
 
 export async function getQuotes(){
     try {

@@ -2,10 +2,10 @@ import { useState } from "react"
 import { FiSearch, FiXCircle } from "react-icons/fi"
 import UploadProductCard from "../cards/UploadProductCard"
 import { useProducts } from "../../../hooks/UseProduct"
-import type { Product } from "../../../types/product"
+import type { ProductQuote } from "../../../types/product"
 type UploadProductsModalProps = {
     setShowModalUploadProducts: React.Dispatch<React.SetStateAction<boolean>>
-    handleAddProduct: (product:Product) => void
+    handleAddProduct: (product:ProductQuote) => void
 }
 export default function UploadProductsModal({ setShowModalUploadProducts,handleAddProduct }: UploadProductsModalProps) {
     const [searchInput, setSearchInput] = useState("")
