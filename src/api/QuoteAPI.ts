@@ -34,29 +34,14 @@ export async function getQuotes() {
 export async function generateQuotePdf(id: number) {
     try {
         const response = await api.get(`/quote/generate-pdf/${id}`, {
-            responseType: 'blob', // 👈 Muy importante para PDF o archivos binarios
+            responseType: "blob"
         });
-
-        // Crear un objeto URL a partir del blob
-        const url = window.URL.createObjectURL(new Blob([response.data]));
-
-        // Crear un enlace invisible y simular clic para descargar
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `cotizacion-${id}.pdf`; // 👈 nombre dinámico opcional
-        document.body.appendChild(a);
-        a.click();
-
-        // Limpiar
-        a.remove();
-        window.URL.revokeObjectURL(url);
-
-        return true;
+        return response.data;
     } catch (error) {
         if (isAxiosError(error)) {
-            console.error('Error al generar PDF:', error.response?.data || error.message);
+            console.error("Error al generar PDF:", error.response?.data || error.message);
             throw error;
         }
-        throw new Error('Error al generar el PDF');
+        throw new Error("Error al generar el PDF");
     }
 }

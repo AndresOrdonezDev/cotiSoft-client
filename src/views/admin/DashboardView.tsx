@@ -1,3 +1,4 @@
+import DownloadQuotePdfModal from "../../components/admin/modals/DownloadQuotePdfModal";
 import EditClientModal from "../../components/admin/modals/EditClientModal";
 import EditProductModal from "../../components/admin/modals/EditProductModal";
 import NewClientModal from "../../components/admin/modals/NewClientModal";
@@ -19,6 +20,9 @@ export default function DashboardView() {
     showModalNewProduct:query.has("newProduct"),
     showModalEditProduct:query.has("editProduct"),
     productId: query.get("productId"),
+    //quote
+    showModalDownloadQuote:query.has("modalQuoteDownload"),
+    quoteId: query.get("quoteId")
   };
 
   return (
@@ -41,6 +45,9 @@ export default function DashboardView() {
       )}
       {modals.showModalEditProduct && modals.productId && (
         <EditProductModal/>
+      )}
+      {modals.showModalDownloadQuote && modals.quoteId && (
+        <DownloadQuotePdfModal/>
       )}
     </div>
   );

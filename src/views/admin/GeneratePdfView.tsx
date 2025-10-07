@@ -1,13 +1,18 @@
-import { useQuery } from "@tanstack/react-query"
-import { generateQuotePdf } from "../../api/QuoteAPI"
+import { useQuery } from "@tanstack/react-query";
+import { generateQuotePdf } from "../../api/QuoteAPI";
+
 
 export default function GeneratePdfView() {
-    const { data, isError } = useQuery({
-        queryKey: ['quotePDF'],
-        queryFn: ()=>generateQuotePdf(1)
-    })
-    if (isError) return <p>error al traer los datos</p>
-    if (data) return (
-        <div>descargar</div>
-    )
+    const id = 1
+  const {data} = useQuery({
+    queryKey:["quote",id],
+    queryFn:()=>generateQuotePdf(id),
+  })
+  const url = window.URL.createObjectURL(new Blob([data]));
+  return (
+    <div>
+      <p>Descargar cotización</p>
+      <a href={url} download={`cotización-${id}.pdf`} className="bg-teal-600 text-white px-4 py-2 rounded">descargar </a>
+    </div>
+  );
 }

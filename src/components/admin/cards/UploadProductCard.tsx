@@ -8,7 +8,7 @@ type UploadProductCardProps = {
 export default function UploadProductCard({product,handleAddProduct}:UploadProductCardProps) {
     
     return (
-        <div className="flex items-center justify-between border-b-1 border-gray-300 py-1">
+        <div className="flex items-center justify-between border-b-1 border-gray-300 py-1 gap-5">
             <div className="text-sm text-gray-700 rounded">
                 <p>{product.name}</p>
                 <p>{product.description}</p>

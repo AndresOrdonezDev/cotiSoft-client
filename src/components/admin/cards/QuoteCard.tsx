@@ -1,3 +1,6 @@
+
+import { useNavigate } from "react-router-dom"
+import { FaRegFilePdf } from "react-icons/fa6";
 import type { Quote } from "../../../types/quote"
 import { formatCurrency, formatDate } from "../../../utils"
 
@@ -5,6 +8,7 @@ type QuoteCardProps = {
     quote: Quote
 }
 export default function QuoteCard({ quote }: QuoteCardProps) {
+    const navigate = useNavigate()
     return (
         <div
             className="flex flex-col sm:flex-row sm:items-center border border-gray-200 rounded
@@ -31,6 +35,9 @@ export default function QuoteCard({ quote }: QuoteCardProps) {
                 >
                     {quote.status}
                 </span>
+                <button className="text-rose-600 p-1 cursor-pointer" onClick={()=>navigate(`?modalQuoteDownload=true&quoteId=${quote.id}`)}>
+                        <FaRegFilePdf size={20}/>
+                </button>
 
             </div>
         </div>

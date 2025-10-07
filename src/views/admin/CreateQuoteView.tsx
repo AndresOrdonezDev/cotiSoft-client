@@ -10,6 +10,7 @@ import QuoteProductCard from "../../components/admin/cards/QuoteProductCard";
 import type { QuoteProductsForm } from "../../types/quote";
 import { createQuote } from "../../api/QuoteAPI";
 import { formatCurrency } from "../../utils";
+import { useNavigate } from "react-router-dom";
 
 export default function CreateQuoteView() {
   const [showModalUploadProducts, setShowModalUploadProducts] = useState(false)
@@ -18,6 +19,7 @@ export default function CreateQuoteView() {
   const [totalQuote, setTotalQuote] = useState(0)
   const [notes,setNotes] = useState("")
   const queryClient = useQueryClient()
+  const navigate = useNavigate()
   const mutateSearchClient = useMutation({
     mutationFn: getClient,
     onError: (data) => toast.error(data.message),
@@ -63,6 +65,7 @@ export default function CreateQuoteView() {
       setNotes("")
       mutateSearchClient.reset()
       queryClient.invalidateQueries({queryKey: ["quotes"]})
+      navigate(`?modalQuoteDownload=true&quoteId=${data.quoteId}`)
     }
   })
   const handleSendQuote = () => {
