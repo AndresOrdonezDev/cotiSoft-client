@@ -1,4 +1,4 @@
-import { FiSearch} from "react-icons/fi";
+import { FiSearch } from "react-icons/fi";
 type QuoteSearchClientBarProps = {
   setSearchInput: React.Dispatch<React.SetStateAction<string>>,
   handleSearch: () => void,
@@ -12,8 +12,9 @@ export default function QuoteSearchClientBar({ setSearchInput, handleSearch, sea
         placeholder="Buscar por identificación o email.."
         value={searchInput}
         onChange={(e) => setSearchInput(e.target.value)}
+        onKeyDown={handleSearch}
         className="w-full rounded-full border border-gray-300 bg-white px-5 py-2 text-gray-700 
-                                 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 pr-1"
+                  focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 pr-1"
       />
       <FiSearch
         onClick={handleSearch}
