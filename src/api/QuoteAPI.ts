@@ -45,3 +45,20 @@ export async function generateQuotePdf(id: number) {
         throw new Error("Error al generar el PDF");
     }
 }
+type SendQuoteByEmailProps = {
+    id: number,
+    client: string,
+    email:string
+}
+export async function sendQuoteEmail({id,client,email}:SendQuoteByEmailProps) {
+    try {
+        const {data}= await api.post('/quote/send-quote-email',{id,client,email});
+        return data;
+    } catch (error) {
+        if (isAxiosError(error)) {
+            console.error("Error al generar PDF:", error.response?.data || error.message);
+            throw error.response?.data;
+        }
+        throw new Error("Error al generar el PDF");
+    }
+}

@@ -49,6 +49,7 @@ export default function ClientCard({client,showActives}:ClientCardProps) {
       <div className="mt-2 sm:mt-0 flex flex-col sm:flex-row sm:items-center gap-4 text-sm text-gray-600">
         <span>ID: {client.idNumber}</span>
         <span>{client.contact}</span>
+        
         <span>
           {client.city && showCity(client.department, client.city)}, {client.department && showDepartment(client.department)}
         </span>

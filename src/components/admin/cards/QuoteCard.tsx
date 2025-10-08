@@ -35,7 +35,7 @@ export default function QuoteCard({ quote }: QuoteCardProps) {
                 >
                     {quote.status}
                 </span>
-                <button className="text-rose-600 p-1 cursor-pointer" onClick={()=>navigate(`?modalQuoteDownload=true&quoteId=${quote.id}`)}>
+                <button className="text-rose-600 p-1 cursor-pointer" onClick={()=>navigate(`?modalQuoteDownload=true&quoteId=${quote.id}&client=${quote.client.fullname}&email=${quote.client.email}`)}>
                         <FaRegFilePdf size={20}/>
                 </button>
 
