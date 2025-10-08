@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import QuoteSearchBar from "../../components/admin/searchBars/QuoteSearchBar";
 import { useState } from "react";
 import QuoteCard from "../../components/admin/cards/QuoteCard";
+import Spinner from "../../components/shared/Spinner";
 
 export default function QuotesView() {
   const navigate = useNavigate()
@@ -16,7 +17,7 @@ export default function QuotesView() {
     queryFn: getQuotes,
     retry: false
   })
-  if (isLoading) return <p>cargando...</p>
+  if (isLoading) return <div className="flex items-center justify-center"><Spinner/></div>;
   if (isError) return <p>Error al consultar las cotizaciones</p>
   if (data) return (
     <div className="w-full h-screen lg:px-12">

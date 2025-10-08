@@ -22,7 +22,6 @@ export default function DashboardView() {
     productId: query.get("productId"),
     //quote
     showModalDownloadQuote:query.has("modalQuoteDownload"),
-    quoteId: query.get("quoteId")
   };
 
   return (
@@ -46,7 +45,7 @@ export default function DashboardView() {
       {modals.showModalEditProduct && modals.productId && (
         <EditProductModal/>
       )}
-      {modals.showModalDownloadQuote && modals.quoteId && (
+      {modals.showModalDownloadQuote && (
         <DownloadQuotePdfModal/>
       )}
     </div>

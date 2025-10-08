@@ -17,9 +17,10 @@ export default function CreateQuoteView() {
   const [searchInput, setSearchInput] = useState("")
   const [productsToQuote, setProductsToQuote] = useState<ProductQuote[]>([])
   const [totalQuote, setTotalQuote] = useState(0)
-  const [notes,setNotes] = useState("")
+  const [notes, setNotes] = useState("")
   const queryClient = useQueryClient()
   const navigate = useNavigate()
+  
   const mutateSearchClient = useMutation({
     mutationFn: getClient,
     onError: (data) => toast.error(data.message),
@@ -28,7 +29,7 @@ export default function CreateQuoteView() {
     }
   })
   const handleSearch = () => {
-    if(!searchInput)return toast.warn('Ingrese el valor a buscar')
+    if (!searchInput) return toast.warn('Ingrese el valor a buscar')
     mutateSearchClient.mutate(searchInput)
   }
   const handleAddProduct = (product: ProductQuote) => {
@@ -63,9 +64,15 @@ export default function CreateQuoteView() {
       toast.success(data.message)
       setProductsToQuote([])
       setNotes("")
+      queryClient.invalidateQueries({ queryKey: ["quotes"] })
+      navigate('?modalQuoteDownload=true', {
+        state: {
+          id: data.quoteId,
+          client: mutateSearchClient.data?.fullname,
+          email: mutateSearchClient.data?.email
+        }
+      })
       mutateSearchClient.reset()
-      queryClient.invalidateQueries({queryKey: ["quotes"]})
-      navigate(`?modalQuoteDownload=true&quoteId=${data.quoteId}`)
     }
   })
   const handleSendQuote = () => {
@@ -115,7 +122,7 @@ export default function CreateQuoteView() {
           </div>
           {productsToQuote.length > 0 && <div>
             <input
-              onChange={(e)=>setNotes(e.target.value)}
+              onChange={(e) => setNotes(e.target.value)}
               className="w-full border-2 mt-5 rounded p-2"
               type="text"
               value={notes}

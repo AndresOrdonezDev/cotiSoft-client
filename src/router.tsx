@@ -9,7 +9,7 @@ import QuotesView from "./views/admin/QuotesView";
 import ClientsView from "./views/admin/ClientsView";
 import ProductsView from "./views/admin/ProductsView";
 import CreateQuoteView from "./views/admin/CreateQuoteView";
-import GeneratePdfView from "./views/admin/GeneratePdfView";
+import EditQuoteView from "./views/admin/EditQuoteView";
 
 
 export default function Router() {
@@ -24,7 +24,8 @@ export default function Router() {
                         <Route path="clients" element={<ClientsView />} />
                         <Route path="products" element={<ProductsView />} />
                         <Route path="newQuote" element={<CreateQuoteView />} />
-                        <Route path="quotePdf" element={<GeneratePdfView />} />
+                        <Route path="editQuote/:id" element={<EditQuoteView/>} />
+                        
                     </Route>
                 </Route>
 

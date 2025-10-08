@@ -5,7 +5,7 @@ export default function AdminLayout() {
     <div>
       <Outlet/>
       <ToastContainer
-        position="top-center"
+        position="bottom-center"
         pauseOnHover={false}
       />
     </div>

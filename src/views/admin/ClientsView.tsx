@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import ClientSearchBar from "../../components/admin/searchBars/ClientSearchBar";
 import ClientCard from "../../components/admin/cards/ClientCard";
+import Spinner from "../../components/shared/Spinner";
 
 export default function ClientsView() {
   const [showActives, setShowActives] = useState(1)
@@ -12,7 +13,7 @@ export default function ClientsView() {
   const { data, isError, isLoading } = useClients(showActives, search);
   const navigate = useNavigate()
 
-  if (isLoading) return <p>Cargando...</p>;
+  if (isLoading) return <div className="flex items-center justify-center"><Spinner/></div>;
   if (isError) return <p>Error al consultar los clientes</p>;
   if (data)
     return (

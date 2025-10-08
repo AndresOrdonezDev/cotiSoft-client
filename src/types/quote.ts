@@ -30,5 +30,32 @@ const quoteProductsSchema = z.object({
         })
     )
 })
+export const quoteResponseSchema = quoteProductsSchema.pick({
+    notes:true
+}).extend({
+  id: z.number(),
+  status: z.string(),
+  client: z.object({
+    id: z.number(),
+    fullname: z.string(),
+    email: z.string(),
+    companyName:z.string(),
+    contact:z.string()
+  }),
+  quoteProducts: z.array(
+    z.object({
+      id: z.number(),
+      product_id: z.number(),
+      price: z.number(),
+      quantity: z.number(),
+      tax: z.number(),
+      products: z.object({
+        id: z.number(),
+        name: z.string(),
+        description: z.string(),
+      }),
+    })
+  ),
+})
 export type QuoteProducts = z.infer<typeof quoteProductsSchema>
 export type QuoteProductsForm = Pick<QuoteProducts, "client_id"|"notes"|"products"|"total">

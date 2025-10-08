@@ -1,6 +1,6 @@
 import { isAxiosError } from 'axios'
 import api from '../lib/axios'
-import { quoteSchemaAPI, type QuoteProductsForm } from '../types/quote'
+import { quoteResponseSchema, quoteSchemaAPI, type QuoteProductsForm } from '../types/quote'
 
 export async function createQuote(formData: QuoteProductsForm) {
     try {
@@ -31,6 +31,39 @@ export async function getQuotes() {
         throw new Error('Error al consultar cotizaciones')
     }
 }
+export async function getQuoteById(id:number) {
+    try {
+        const { data } = await api(`/quote/${id}`)
+        const result = quoteResponseSchema.safeParse(data)
+        if (result.success) {
+            return result.data
+        }
+        throw new Error('Error al consultar la cotización')
+    } catch (error) {
+        if (isAxiosError(error)) {
+            console.error('Error get quotes:', error.response?.data || error.message);
+            throw error;
+        }
+        throw new Error('Error al consultar cotizaciones')
+    }
+}
+type UpdateQuoteProps = {
+    id:number,
+    formData: QuoteProductsForm
+}
+export async function updateQuote({id,formData}:UpdateQuoteProps) {
+    try {
+        const { data } = await api.put(`/quote/${id}`, formData)
+        return data
+    } catch (error) {
+        if (isAxiosError(error)) {
+            console.error('Error al crear la cotización:', error.response?.data || error.message);
+            throw error;
+        }
+        throw new Error('Error al crear la cotización')
+    }
+}
+
 export async function generateQuotePdf(id: number) {
     try {
         const response = await api.get(`/quote/generate-pdf/${id}`, {

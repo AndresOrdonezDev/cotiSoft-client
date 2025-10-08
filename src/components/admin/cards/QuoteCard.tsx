@@ -7,8 +7,18 @@ import { formatCurrency, formatDate } from "../../../utils"
 type QuoteCardProps = {
     quote: Quote
 }
+//?modalQuoteDownload=true&quoteId=${quote.id}&client=${quote.client.fullname}&email=${quote.client.email}
 export default function QuoteCard({ quote }: QuoteCardProps) {
     const navigate = useNavigate()
+    const handleModalDownload = (id:number,client:string,email:string)=>{
+        navigate('?modalQuoteDownload=true',{
+            state:{
+                id,
+                client,
+                email
+            }
+        })
+    }
     return (
         <div
             className="flex flex-col sm:flex-row sm:items-center border border-gray-200 rounded
@@ -22,11 +32,12 @@ export default function QuoteCard({ quote }: QuoteCardProps) {
             <div className="mt-2 sm:mt-0 flex items-center gap-4">
                 <span className="font-semibold text-gray-700">{formatCurrency(quote.total)}</span>
                 <button
+                    onClick={()=> navigate(`/editQuote/${quote.id}`)}
                     className="border border-gray-500 px-3 bg-gray-500 text-gray-100 rounded-lg cursor-pointer"
                 >Editar</button>
                 <span
                     className={`px-3 py-1 text-xs rounded-full 
-                  ${quote.status === "Aprobada"
+                  ${quote.status === "Aceptada"
                             ? "bg-teal-100 text-teal-700"
                             : quote.status === "Pendiente"
                                 ? "bg-amber-200 text-amber-700"
@@ -35,7 +46,7 @@ export default function QuoteCard({ quote }: QuoteCardProps) {
                 >
                     {quote.status}
                 </span>
-                <button className="text-rose-600 p-1 cursor-pointer" onClick={()=>navigate(`?modalQuoteDownload=true&quoteId=${quote.id}&client=${quote.client.fullname}&email=${quote.client.email}`)}>
+                <button className="text-rose-600 p-1 cursor-pointer" onClick={()=>handleModalDownload(quote.id,quote.client.fullname,quote.client.email)}>
                         <FaRegFilePdf size={20}/>
                 </button>
 
