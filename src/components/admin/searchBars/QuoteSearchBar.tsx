@@ -2,7 +2,7 @@ import { FiSearch, FiXCircle } from "react-icons/fi";
 type QuoteSearchBarProps = {
     setSearchInput: React.Dispatch<React.SetStateAction<string>>,
     setSearch: React.Dispatch<React.SetStateAction<string>>,
-    setShowState: React.Dispatch<React.SetStateAction<number>>,
+    setShowState: React.Dispatch<React.SetStateAction<string>>,
     searchInput: string,
     search: string,
 }
@@ -35,15 +35,15 @@ export default function QuoteSearchBar({ setSearchInput, setShowState, setSearch
             >
                 <button
                     className="border border-amber-300 rounded-lg px-2 bg-amber-300 text-black cursor-pointer"
-                    onClick={() => setShowState(1)}
+                    onClick={() => setShowState("Pendiente")}
                 >Pendientes</button>
                 <button
                     className="border border-teal-300 rounded-lg px-2 bg-teal-300 text-black cursor-pointer"
-                    onClick={() => setShowState(1)}
+                    onClick={() => setShowState("Aceptada")}
                 >Aceptadas</button>
                 <button
                     className="border border-rose-300 rounded-lg px-2 bg-rose-300 text-black cursor-pointer"
-                    onClick={() => setShowState(1)}
+                    onClick={() => setShowState("Rechazada")}
                 >Rechazadas</button>
             </div>
         </div>

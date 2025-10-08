@@ -9,12 +9,13 @@ import Spinner from "../../components/shared/Spinner";
 
 export default function QuotesView() {
   const navigate = useNavigate()
-  const [showState, setShowState] = useState(1)
+  const [showState, setShowState] = useState("Pendiente")
   const [searchInput, setSearchInput] = useState("")
   const [search, setSearch] = useState("")
+
   const { data, isError, isLoading } = useQuery({
-    queryKey: ["quotes"],
-    queryFn: getQuotes,
+    queryKey: ["quotes",showState],
+    queryFn: ()=>getQuotes(showState,search),
     retry: false
   })
   if (isLoading) return <div className="flex items-center justify-center"><Spinner/></div>;

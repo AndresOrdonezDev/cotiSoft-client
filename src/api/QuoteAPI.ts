@@ -15,9 +15,9 @@ export async function createQuote(formData: QuoteProductsForm) {
     }
 }
 
-export async function getQuotes() {
+export async function getQuotes(showState:string,search:string) {
     try {
-        const { data } = await api('/quote')
+        const { data } = await api(`/quote?showState=${showState}&search=${encodeURIComponent(search)}`)
         const result = quoteSchemaAPI.safeParse(data)
         if (result.success) {
             return result.data
@@ -87,6 +87,23 @@ export async function sendQuoteEmail({id,client,email}:SendQuoteByEmailProps) {
     try {
         const {data}= await api.post('/quote/send-quote-email',{id,client,email});
         return data;
+    } catch (error) {
+        if (isAxiosError(error)) {
+            console.error("Error al generar PDF:", error.response?.data || error.message);
+            throw error.response?.data;
+        }
+        throw new Error("Error al generar el PDF");
+    }
+}
+
+type UpdateStatusQuoteProps ={
+    id:number,
+    status:string
+}
+export async function updateStatusQuote({id,status}:UpdateStatusQuoteProps){
+    try {
+        const {data} = await api.post(`/quote/update-status/${id}`,{status})
+        return data
     } catch (error) {
         if (isAxiosError(error)) {
             console.error("Error al generar PDF:", error.response?.data || error.message);
