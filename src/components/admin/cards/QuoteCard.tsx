@@ -67,6 +67,7 @@ export default function QuoteCard({ quote }: QuoteCardProps) {
             <div>
                 <p className="font-medium text-slate-700">Cot. N°-{quote.id} — {quote.client.fullname}</p>
                 <p className="text-sm text-gray-500">{quote.client.companyName}</p>
+                <p className="text-sm text-gray-500">{quote.client.email}</p>
                 <p className="text-sm text-gray-500">{formatDate(quote.createdAt)}</p>
             </div>
             <div className="mt-2 sm:mt-0 flex items-center gap-4">

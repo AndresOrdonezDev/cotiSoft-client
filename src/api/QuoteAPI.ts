@@ -17,7 +17,7 @@ export async function createQuote(formData: QuoteProductsForm) {
 
 export async function getQuotes(showState:string,search:string) {
     try {
-        const { data } = await api(`/quote?showState=${showState}&search=${encodeURIComponent(search)}`)
+        const { data } = await api(`/quote?showState=${showState}&search=${search}`)
         const result = quoteSchemaAPI.safeParse(data)
         if (result.success) {
             return result.data

@@ -10,6 +10,7 @@ import ClientsView from "./views/admin/ClientsView";
 import ProductsView from "./views/admin/ProductsView";
 import CreateQuoteView from "./views/admin/CreateQuoteView";
 import EditQuoteView from "./views/admin/EditQuoteView";
+import AuthView from "./views/admin/AuthView";
 
 
 export default function Router() {
@@ -25,6 +26,7 @@ export default function Router() {
                         <Route path="products" element={<ProductsView />} />
                         <Route path="newQuote" element={<CreateQuoteView />} />
                         <Route path="editQuote/:id" element={<EditQuoteView/>} />
+                        <Route path="auth" element={<AuthView/>} />
                         
                     </Route>
                 </Route>

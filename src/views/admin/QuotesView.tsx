@@ -9,12 +9,12 @@ import Spinner from "../../components/shared/Spinner";
 
 export default function QuotesView() {
   const navigate = useNavigate()
-  const [showState, setShowState] = useState("Pendiente")
+  const [showState, setShowState] = useState("All")
   const [searchInput, setSearchInput] = useState("")
   const [search, setSearch] = useState("")
 
   const { data, isError, isLoading } = useQuery({
-    queryKey: ["quotes",showState],
+    queryKey: ["quotes",showState,search],
     queryFn: ()=>getQuotes(showState,search),
     retry: false
   })

@@ -1,14 +1,32 @@
 import { useState } from "react";
-import { FiFileText, FiPackage, FiUsers, FiLogOut, FiMenu, FiX } from "react-icons/fi";
+import { FiFileText, FiPackage, FiUsers, FiLogOut, FiMenu, FiX,FiLock } from "react-icons/fi";
 import Logo from "./Logo";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { logout } from "../../api/AuthAPI";
+import { toast } from "react-toastify";
 export default function Sidebar() {
     const [open, setOpen] = useState(true);
+    const navigate = useNavigate()
+    const queryClient = useQueryClient()
     const menuItems = [
         { name: "Cotizaciones",path:"quotes", icon: <FiFileText size={20} /> },
         { name: "Productos", path:"products", icon: <FiPackage size={20} /> },
         { name: "Clientes", path:"clients", icon: <FiUsers size={20} /> },
+        { name: "Ingreso", path:"auth", icon: <FiLock size={20} /> },
     ];
+    const {mutate} = useMutation({
+        mutationFn:logout,
+        onError:(data)=>toast.error(data.message),
+        onSuccess:()=>{
+            localStorage.removeItem('token-cotisoft')
+            queryClient.removeQueries({queryKey:['user']})
+            navigate('login')
+        }
+    })
+    const handleLogout = ()=>{
+        mutate()
+    }
     return (
         <aside
             className={`bg-gray-900 text-gray-200 font-bold transition-all duration-300 flex flex-col ${open ? "w-64" : "w-20"
@@ -39,7 +57,9 @@ export default function Sidebar() {
 
             {/* Logout */}
             <div className="p-4">
-                <button className="flex items-center gap-3 w-full hover:bg-slate-700 px-4 py-3 rounded transition hover:text-red-400">
+                <button 
+                    onClick={handleLogout}
+                    className="flex items-center gap-3 w-full hover:bg-slate-700 px-4 py-3 rounded transition hover:text-red-400">
                     <FiLogOut size={20} />
                     {open && <span>Cerrar sesión</span>}
                 </button>

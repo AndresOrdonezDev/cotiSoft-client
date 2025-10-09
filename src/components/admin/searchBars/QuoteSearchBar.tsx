@@ -12,6 +12,7 @@ export default function QuoteSearchBar({ setSearchInput, setShowState, setSearch
             <div className="relative w-full lg:w-xl">
                 <input
                     type="text"
+                    disabled={search ? true : false}
                     placeholder="Buscar nombre o descripción"
                     value={searchInput}
                     onChange={(e) => setSearchInput(e.target.value)}
@@ -19,20 +20,23 @@ export default function QuoteSearchBar({ setSearchInput, setShowState, setSearch
                                focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 pr-1"
                 />
                 {!search && <FiSearch
-                    onClick={() => setSearch(searchInput)}
+                    onClick={() => [setSearch(searchInput)]}
                     size={20}
                     className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 cursor-pointer"
                 />}
                 {search && <FiXCircle
                     onClick={() => [setSearch(""), setSearchInput("")]}
                     size={20}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 cursor-pointer"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 text-rose-500 cursor-pointer"
                 />}
             </div>
             <div
-
                 className="flex items-center gap-3 cursor-pointer"
             >
+                <button
+                    className="border border-gray-600 rounded-lg px-2 bg-gray-600 text-gray-200 cursor-pointer"
+                    onClick={() => setShowState("All")}
+                >Todas</button>
                 <button
                     className="border border-amber-300 rounded-lg px-2 bg-amber-300 text-black cursor-pointer"
                     onClick={() => setShowState("Pendiente")}
