@@ -31,7 +31,7 @@ export default function DownloadQuotePdfModal() {
     }
     mutate(data)
   }
-  if(isError) return navigate(-1)
+  if(isError) return <p>Error consultar la cotización</p>
   return (
     <div className="fixed inset-0 flex items-start justify-center bg-black/70 z-10 overflow-y-auto px-5">
       <div className="bg-white rounded-xl shadow-lg w-full max-w-lg mt-50 p-6 flex flex-col max-h-[90vh]">

@@ -1,4 +1,4 @@
-// src/components/forms/NewProductForm.tsx
+
 import type { FieldErrors, UseFormRegister } from "react-hook-form";
 import type { ProductForm } from "../../../types/product";
 

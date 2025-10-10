@@ -1,6 +1,6 @@
 import { isAxiosError } from "axios";
 import api from "../lib/axios";
-import { userSchemaAPI, usersSchemaAPI, type UserLogin } from "../types/auth";
+import { userSchemaAPI, usersSchemaAPI, type FormNewUser, type UserLogin } from "../types/auth";
 
 export async function login(formData: UserLogin) {
   try {
@@ -11,7 +11,7 @@ export async function login(formData: UserLogin) {
       console.log(error.response?.data)
       throw error.response?.data
     }
-    throw new Error('Error al crear el cliente')
+    throw new Error('Error iniciar sesión')
   }
 }
 
@@ -56,4 +56,17 @@ export async function getUsers() {
             throw new Error(error.response.data.message)
         }
     }
+}
+
+export async function createAccount(formData: FormNewUser) {
+  try {
+    const { data } = await api.post('/auth/create-account', formData)
+    return data
+  } catch (error) {
+    if (isAxiosError(error)) {
+      console.log(error.response?.data)
+      throw error.response?.data
+    }
+    throw new Error('Error al crear el usuario')
+  }
 }

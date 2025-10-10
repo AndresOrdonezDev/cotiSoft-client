@@ -3,6 +3,7 @@ import EditClientModal from "../../components/admin/modals/EditClientModal";
 import EditProductModal from "../../components/admin/modals/EditProductModal";
 import NewClientModal from "../../components/admin/modals/NewClientModal";
 import NewProductModal from "../../components/admin/modals/NewProductModal";
+import NewUserModal from "../../components/admin/modals/NewUserModal";
 import Sidebar from "../../components/shared/Sidebar";
 import { Outlet, useLocation } from "react-router-dom";
 
@@ -22,6 +23,8 @@ export default function DashboardView() {
     productId: query.get("productId"),
     //quote
     showModalDownloadQuote:query.has("modalQuoteDownload"),
+    //user
+    showModalNewUser:query.has("modalNewUser"),
   };
 
   return (
@@ -47,6 +50,9 @@ export default function DashboardView() {
       )}
       {modals.showModalDownloadQuote && (
         <DownloadQuotePdfModal/>
+      )}
+      {modals.showModalNewUser && (
+        <NewUserModal/>
       )}
     </div>
   );
