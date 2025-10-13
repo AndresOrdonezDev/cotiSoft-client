@@ -11,6 +11,7 @@ import ProductsView from "./views/admin/ProductsView";
 import CreateQuoteView from "./views/admin/CreateQuoteView";
 import EditQuoteView from "./views/admin/EditQuoteView";
 import AuthView from "./views/admin/AuthView";
+import ForgotPasswordView from "./views/auth/ForgotPasswordView";
 
 
 export default function Router() {
@@ -34,6 +35,7 @@ export default function Router() {
 
                 <Route element={<AuthLayout />}>
                     <Route path="/login" element={<LoginView />} index />
+                    <Route path="/forgot-password/:email/:token" element={<ForgotPasswordView />} index />
                 </Route>
 
                 <Route element={<AuthLayout />}>

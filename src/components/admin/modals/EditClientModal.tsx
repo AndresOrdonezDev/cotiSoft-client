@@ -13,8 +13,8 @@ export default function EditClientModal() {
     const queryClient = useQueryClient()
     const { search } = useLocation();
     const query = new URLSearchParams(search);
-    const productId = query.get("clientId")!
-    const { data } = useClientById(+productId)
+    const clientId = query.get("clientId")!
+    const { data } = useClientById(+clientId)
     
     const {
         register,
@@ -38,7 +38,7 @@ export default function EditClientModal() {
                 city: data.city || "" 
             })
         }
-    }, [productId, data])
+    }, [clientId, data])
 
     const { mutate } = useMutation({
         mutationFn: updateClientById,
@@ -52,7 +52,7 @@ export default function EditClientModal() {
     })
     const handleUpdateClient = (formData: ClientForm) => {
         const data = {
-            id:+productId,
+            id:+clientId,
             formData
         }
         mutate(data)

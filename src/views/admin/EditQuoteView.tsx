@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
-import { FiPlus } from "react-icons/fi";
+import { FiPlus, FiTrash } from "react-icons/fi";
 import UploadProductsModal from "../../components/admin/modals/UploadProductsModal";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import type { ProductQuote } from "../../types/product";
 import QuoteProductCard from "../../components/admin/cards/QuoteProductCard";
 import { formatCurrency } from "../../utils";
 import { useNavigate, useParams } from "react-router-dom";
-import { getQuoteById, updateQuote } from "../../api/QuoteAPI";
+import { deleteQuote, getQuoteById, updateQuote } from "../../api/QuoteAPI";
 import { getClient } from "../../api/ClientAPI";
 import { toast } from "react-toastify";
 import QuoteSearchClientBar from "../../components/admin/searchBars/QuoteSearchClientBar";
@@ -96,6 +96,19 @@ export default function EditQuoteView() {
         }
     })
 
+    const mutationDeleteQuote = useMutation({
+        mutationFn:deleteQuote,
+        onError:(data)=> toast.error(data.message),
+        onSuccess:(data)=>{
+            toast.success(data.message)
+            setProductsToQuote([])
+            setNotes("")
+            queryClient.invalidateQueries({ queryKey: ["quotes"] })
+            mutateSearchClient.reset()
+            navigate('/quotes')
+        }
+    })
+
     const handleSendQuote = () => {
         const { data } = mutateSearchClient
         if (!data) return toast.error("Error al tomar el cliente")
@@ -111,6 +124,13 @@ export default function EditQuoteView() {
             formData:dataQuote
         }
         mutate(dataUpdate)
+    }
+
+    const handleDeleteQuote = ()=>{
+        if(!id) return toast.error("No hay una cotización seleccionada")
+        if(confirm(`Desea eliminar la cotización No. ${id}`)){
+           mutationDeleteQuote.mutate(+id)
+        }
     }
     if (isLoading) return <p>Cargando..</p>
     if (isError) return <p>Error al traer los datos</p>
@@ -137,6 +157,10 @@ export default function EditQuoteView() {
 
                     <div className="flex justify-end mt-5 gap-5">
                         
+                        {productsToQuote.length > 0 && id &&<button
+                            onClick={()=>handleDeleteQuote()}
+                            className="border text-sm font-semibold cursor-pointer border-rose-600 bg-rose-600 px-2 rounded-lg text-white hover:bg-rose-700 hover:border-rose-700 transition-all"
+                        ><FiTrash/></button>}
                         {productsToQuote.length > 0 && <button
                             onClick={()=>handleSendQuote()}
                             className="border text-sm font-semibold cursor-pointer border-slate-600 bg-slate-600 px-2 rounded-lg text-white hover:bg-slate-700 hover:border-slate-700 transition-all"

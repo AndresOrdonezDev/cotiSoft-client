@@ -1,6 +1,6 @@
 import { isAxiosError } from 'axios'
 import api from '../lib/axios'
-import { quoteResponseSchema, quoteSchemaAPI, type QuoteProductsForm } from '../types/quote'
+import { quoteResponseSchema, quoteSchemaAPI, type Quote, type QuoteProductsForm} from '../types/quote'
 
 export async function createQuote(formData: QuoteProductsForm) {
     try {
@@ -112,3 +112,16 @@ export async function updateStatusQuote({id,status}:UpdateStatusQuoteProps){
         throw new Error("Error al generar el PDF");
     }
 }
+
+export async function deleteQuote(id:Quote["id"]){
+    try {
+        const { data } = await api.delete(`/quote/${id}`)
+        return data
+    } catch (error) {
+        if (isAxiosError(error)) {
+            console.error("Error eliminar Cotización:", error.response?.data || error.message);
+            throw error.response?.data;
+        }
+        throw new Error("Error eliminar Cotización");
+    }
+}   

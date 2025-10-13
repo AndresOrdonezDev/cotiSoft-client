@@ -11,7 +11,7 @@ export default function LoginView() {
   const {register,handleSubmit,formState:{errors}} = useForm<UserLogin>()
   const { mutate } = useMutation({
     mutationFn: login,
-    onError: (data) => { toast.error(data.message) },
+    onError: (data) => { toast.error(data.message,{toastId:"errorLogin"}) },
     onSuccess: (data) => {
       navigate("/quotes")
       localStorage.setItem('token-cotisoft', data)
@@ -79,13 +79,13 @@ export default function LoginView() {
           />
 
           <div className="text-center text-sm text-gray-500 mt-3">
-            ¿Olvidaste tu contraseña?{" "}
-            <a
-              href="#"
-              className="text-teal-600 hover:text-teal-700 font-medium"
+            ¿Olvidaste tu contraseña?{"  "}
+            <button
+              onClick={()=>navigate('?forgotPassword=true')}
+              className="text-teal-600 hover:text-teal-700 font-medium cursor-pointer"
             >
               Recuperar acceso
-            </a>
+            </button>
           </div>
         </form>
       </div>

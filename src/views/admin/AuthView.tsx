@@ -1,15 +1,26 @@
 import { FiPlus } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
-import { getUsers } from "../../api/AuthAPI";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { getUsers, toggleUserStatus } from "../../api/AuthAPI";
 import Spinner from "../../components/shared/Spinner";
+import { toast } from "react-toastify";
 
 export default function AuthView() {
     const navigate = useNavigate()
+    const queryClient = useQueryClient()
     const { data, isLoading, isError } = useQuery({
         queryKey: ['usersAuth'],
         queryFn: getUsers
     })
+    const {mutate} = useMutation({
+        mutationFn:toggleUserStatus,
+        onError:(data)=>toast.error(data.message),
+        onSuccess:(data)=>{
+            toast.success(data.message),
+            queryClient.invalidateQueries({queryKey: ['usersAuth']})
+        }
+    })
+   
     if (isLoading) return <div className="flex items-center justify-center"><Spinner /></div>;
     if (isError) return <p>Error al consultar los clientes</p>;
     if (data) return (
@@ -43,11 +54,11 @@ export default function AuthView() {
                             <span>{user.isAdmin ? "Admin" : "Aux"}</span>
                             <div className="space-x-3">
                                 <button
-                                    onClick={() => navigate(`?edituser=true&userId=${user.id}`)}
+                                    onClick={() => navigate(`?updateUserModal=true&userId=${user.id}`)}
                                     className="border rounded-lg px-2 cursor-pointer text-gray-950 bg-amber-400 border-amber-400"
                                 >Editar</button>
                                 <button
-
+                                    onClick={()=>mutate(user.id)}
                                     className={`border rounded-lg px-2 cursor-pointer text-gray-950 
                                         ${!user.isActive ? 'bg-rose-300 border-rose-300' : 'bg-teal-300 border-teal-300'}`}
                                 >{user.isActive ? 'Activo' : 'Inactivo'}</button>
