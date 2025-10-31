@@ -8,7 +8,7 @@ type QuoteSearchBarProps = {
 }
 export default function QuoteSearchBar({ setSearchInput, setShowState, setSearch, searchInput, search }: QuoteSearchBarProps) {
     return (
-        <div className="flex flex-col lg:flex-row gap-10 items-center mb-8">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center mb-8">
             <div className="relative w-full lg:w-xl">
                 <input
                     type="text"
@@ -16,7 +16,7 @@ export default function QuoteSearchBar({ setSearchInput, setShowState, setSearch
                     placeholder="Buscar nombre o descripción"
                     value={searchInput}
                     onChange={(e) => setSearchInput(e.target.value)}
-                    className="w-full rounded-full border border-gray-300 bg-gray-50 px-5 py-2 text-gray-700 
+                    className="w-full rounded-full border border-gray-300 bg-gray-50 px-5 py-1 lg:py-2 text-gray-700 
                                focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 pr-1"
                 />
                 {!search && <FiSearch
@@ -31,22 +31,22 @@ export default function QuoteSearchBar({ setSearchInput, setShowState, setSearch
                 />}
             </div>
             <div
-                className="flex items-center gap-3 cursor-pointer"
+                className="flex items-center gap-2 lg:gap-3 cursor-pointer"
             >
                 <button
-                    className="border border-gray-600 rounded-lg px-2 bg-gray-600 text-gray-200 cursor-pointer"
+                    className=" text-sm border border-gray-600 rounded-lg px-2 bg-gray-600 text-gray-200 cursor-pointer"
                     onClick={() => setShowState("All")}
                 >Todas</button>
                 <button
-                    className="border border-amber-300 rounded-lg px-2 bg-amber-300 text-black cursor-pointer"
+                    className="text-sm border border-amber-300 rounded-lg px-2 bg-amber-300 text-black cursor-pointer"
                     onClick={() => setShowState("Pendiente")}
                 >Pendientes</button>
                 <button
-                    className="border border-teal-300 rounded-lg px-2 bg-teal-300 text-black cursor-pointer"
+                    className="text-sm border border-teal-300 rounded-lg px-2 bg-teal-300 text-black cursor-pointer"
                     onClick={() => setShowState("Aceptada")}
                 >Aceptadas</button>
                 <button
-                    className="border border-rose-300 rounded-lg px-2 bg-rose-300 text-black cursor-pointer"
+                    className="text-sm border border-rose-300 rounded-lg px-2 bg-rose-300 text-black cursor-pointer"
                     onClick={() => setShowState("Rechazada")}
                 >Rechazadas</button>
             </div>

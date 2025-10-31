@@ -28,12 +28,12 @@ export default function QuoteCard({ quote }: QuoteCardProps) {
     const toggleMenu = (id: number) => {
         setOpenMenuId(openMenuId === id ? null : id);
     };
-    const {mutate} = useMutation({
-        mutationFn:updateStatusQuote,
-        onError:(data)=>toast.error(data.message),
-        onSuccess:(data)=>{
-            toast.success(data.message,{toastId:'newStatusQuote'})
-            queryClient.invalidateQueries({queryKey:['quotes']})
+    const { mutate } = useMutation({
+        mutationFn: updateStatusQuote,
+        onError: (data) => toast.error(data.message),
+        onSuccess: (data) => {
+            toast.success(data.message, { toastId: 'newStatusQuote' })
+            queryClient.invalidateQueries({ queryKey: ['quotes'] })
         }
     })
 
@@ -41,8 +41,8 @@ export default function QuoteCard({ quote }: QuoteCardProps) {
         setStateSelected(newStatus);
         setOpenMenuId(null);
         const data = {
-            id:quote.id,
-            status:newStatus
+            id: quote.id,
+            status: newStatus
         }
         mutate(data)
     };
@@ -57,7 +57,7 @@ export default function QuoteCard({ quote }: QuoteCardProps) {
             >
                 <CiMenuKebab size={20} className="text-gray-600" />
             </button>
-            
+
             {openMenuId === quote.id && (
                 <SelectStateQuoteCard
                     handleChangeEstado={handleChangeEstado}
@@ -70,26 +70,29 @@ export default function QuoteCard({ quote }: QuoteCardProps) {
                 <p className="text-sm text-gray-500">{quote.client.email}</p>
                 <p className="text-sm text-gray-500">{formatDate(quote.createdAt)}</p>
             </div>
-            <div className="mt-2 sm:mt-0 flex items-center gap-4">
-                <span className="font-semibold text-gray-700">{formatCurrency(quote.total)}</span>
-                <button
-                    onClick={() => navigate(`/editQuote/${quote.id}`)}
-                    className="border border-gray-500 px-3 bg-gray-500 text-gray-100 rounded-lg cursor-pointer"
-                >Editar</button>
-                <span
-                    className={`px-3 py-1 text-xs rounded-full 
+            <div className="mt-2 sm:mt-0 flex flex-col lg:flex-row items-center gap-4">
+                <span className="font-semibold text-gray-700 text-left w-full">{formatCurrency(quote.total)}</span>
+                <div className="flex gap-3">
+                    <button
+                        onClick={() => navigate(`/editQuote/${quote.id}`)}
+                        className="border border-gray-500 px-3 bg-gray-500 text-gray-100 rounded-lg cursor-pointer"
+                    >Editar</button>
+                    <span
+                        className={`px-3 py-1 text-xs rounded-full 
                   ${quote.status === "Aceptada"
-                            ? "bg-teal-100 text-teal-700"
-                            : quote.status === "Pendiente"
-                                ? "bg-amber-200 text-amber-700"
-                                : "bg-red-100 text-red-700"
-                        }`}
-                >
-                    {quote.status}
-                </span>
-                <button className="text-rose-600 p-1 cursor-pointer" onClick={() => handleModalDownload(quote.id, quote.client.fullname, quote.client.email)}>
-                    <FaRegFilePdf size={20} />
-                </button>
+                                ? "bg-teal-100 text-teal-700"
+                                : quote.status === "Pendiente"
+                                    ? "bg-amber-200 text-amber-700"
+                                    : "bg-red-100 text-red-700"
+                            }`}
+                    >
+                        {quote.status}
+                    </span>
+                    <button className="text-rose-600 p-1 cursor-pointer" onClick={() => handleModalDownload(quote.id, quote.client.fullname, quote.client.email)}>
+                        <FaRegFilePdf size={20} />
+                    </button>
+                </div>
+
 
             </div>
         </div>

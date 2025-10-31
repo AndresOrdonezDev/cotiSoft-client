@@ -20,10 +20,10 @@ export default function ClientsView() {
       <div className="w-full h-screen lg:px-12">
         <div className="sticky top-0 bg-gray-100 pt-6 lg:pt-12">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-            <h1 className="text-2xl font-bold text-slate-700">Clientes</h1>
+            <h1 className="lg:text-2xl text-lg font-bold text-slate-700">Clientes</h1>
             <button
               onClick={() => navigate('?newClient=true')}
-              className="flex items-center gap-2 bg-teal-600 text-white px-4 py-2 rounded-lg hover:bg-teal-700 transition">
+              className="flex items-center gap-2 bg-teal-600 text-white px-4 lg:py-2 py-1 rounded-lg hover:bg-teal-700 transition">
               <FiPlus size={18} />
               Nuevo Cliente
             </button>
