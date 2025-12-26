@@ -1,4 +1,4 @@
-import { FiFileText, FiPackage, FiUsers, FiLogOut, FiMenu, FiX, FiLock } from "react-icons/fi";
+import { FiFileText, FiPackage, FiUsers, FiLogOut, FiMenu, FiX, FiLock, FiPaperclip } from "react-icons/fi";
 import Logo from "./Logo";
 import { Link, useNavigate } from "react-router-dom";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
@@ -16,6 +16,7 @@ export default function Sidebar({ setOpen, open }: SidebarProps) {
         { name: "Cotizaciones", path: "quotes", icon: <FiFileText size={20} /> },
         { name: "Productos", path: "products", icon: <FiPackage size={20} /> },
         { name: "Clientes", path: "clients", icon: <FiUsers size={20} /> },
+        { name: "Adjuntos", path: "attachments", icon: <FiPaperclip size={20} /> },
         { name: "Ingreso", path: "auth", icon: <FiLock size={20} /> },
     ];
     const { mutate } = useMutation({

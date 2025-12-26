@@ -81,11 +81,11 @@ export async function generateQuotePdf(id: number) {
 type SendQuoteByEmailProps = {
     id: number,
     client: string,
-    email:string
+    emails:string[]
 }
-export async function sendQuoteEmail({id,client,email}:SendQuoteByEmailProps) {
+export async function sendQuoteEmail({id,client,emails}:SendQuoteByEmailProps) {
     try {
-        const {data}= await api.post('/quote/send-quote-email',{id,client,email});
+        const {data}= await api.post('/quote/send-quote-email',{id,client,emails});
         return data;
     } catch (error) {
         if (isAxiosError(error)) {

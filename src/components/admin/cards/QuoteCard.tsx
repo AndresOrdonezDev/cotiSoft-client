@@ -16,12 +16,13 @@ export default function QuoteCard({ quote }: QuoteCardProps) {
     const queryClient = useQueryClient()
     const [openMenuId, setOpenMenuId] = useState<number | null>(null);
     const [stateSelected, setStateSelected] = useState(quote.status);
-    const handleModalDownload = (id: number, client: string, email: string) => {
+    const handleModalDownload = (id: number, client: string, email: string, client_id: number) => {
         navigate('?modalQuoteDownload=true', {
             state: {
                 id,
                 client,
-                email
+                email,
+                client_id
             }
         })
     }
@@ -73,12 +74,16 @@ export default function QuoteCard({ quote }: QuoteCardProps) {
             <div className="mt-2 sm:mt-0 flex flex-col lg:flex-row items-center gap-4">
                 <span className="font-semibold text-gray-700 text-left w-full">{formatCurrency(quote.total)}</span>
                 <div className="flex gap-3">
+                    <button className="text-rose-600 p-1 cursor-pointer" onClick={() => handleModalDownload(quote.id, quote.client.fullname, quote.client.email, quote.client_id)}>
+                        <FaRegFilePdf size={20} />
+                    </button>
                     <button
                         onClick={() => navigate(`/editQuote/${quote.id}`)}
                         className="border border-gray-500 px-3 bg-gray-500 text-gray-100 rounded-lg cursor-pointer"
                     >Editar</button>
+
                     <span
-                        className={`px-3 py-1 text-xs rounded-full 
+                        className={`px-2 py-0.5 flex items-center text-xs rounded-lg 
                   ${quote.status === "Aceptada"
                                 ? "bg-teal-100 text-teal-700"
                                 : quote.status === "Pendiente"
@@ -88,12 +93,9 @@ export default function QuoteCard({ quote }: QuoteCardProps) {
                     >
                         {quote.status}
                     </span>
-                    <button className="text-rose-600 p-1 cursor-pointer" onClick={() => handleModalDownload(quote.id, quote.client.fullname, quote.client.email)}>
-                        <FaRegFilePdf size={20} />
-                    </button>
+
+
                 </div>
-
-
             </div>
         </div>
     )

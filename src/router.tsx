@@ -12,6 +12,7 @@ import CreateQuoteView from "./views/admin/CreateQuoteView";
 import EditQuoteView from "./views/admin/EditQuoteView";
 import AuthView from "./views/admin/AuthView";
 import ForgotPasswordView from "./views/auth/ForgotPasswordView";
+import AttachmentsView from "./views/admin/AttachmentsView";
 
 
 export default function Router() {
@@ -25,10 +26,11 @@ export default function Router() {
                         <Route path="quotes" element={<QuotesView />} />
                         <Route path="clients" element={<ClientsView />} />
                         <Route path="products" element={<ProductsView />} />
+                        <Route path="attachments" element={<AttachmentsView />} />
                         <Route path="newQuote" element={<CreateQuoteView />} />
                         <Route path="editQuote/:id" element={<EditQuoteView/>} />
                         <Route path="auth" element={<AuthView/>} />
-                        
+
                     </Route>
                 </Route>
 

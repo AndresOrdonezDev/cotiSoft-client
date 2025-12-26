@@ -6,6 +6,7 @@ import ClientSearchBar from "../../components/admin/searchBars/ClientSearchBar";
 import ClientCard from "../../components/admin/cards/ClientCard";
 import Spinner from "../../components/shared/Spinner";
 
+
 export default function ClientsView() {
   const [showActives, setShowActives] = useState(1)
   const [searchInput, setSearchInput] = useState("")
@@ -47,6 +48,7 @@ export default function ClientsView() {
             />
           ))}
         </div>
+        
       </div>
     );
 }

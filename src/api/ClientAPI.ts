@@ -1,6 +1,6 @@
 import { isAxiosError } from "axios";
 import api from "../lib/axios";
-import { clientSchema, clientSchemaAPI, type Client, type ClientForm } from "../types/client";
+import { clientEmailsSchemaAPI, clientSchema, clientSchemaAPI, type Client, type ClientForm, type EmailClientList } from "../types/client";
 
 export async function createClient(formData: ClientForm) {
   try {
@@ -96,5 +96,49 @@ export async function getClient(search: string) {
       throw error.response?.data
     }
     throw new Error('Error al consultar clientes')
+  }
+}
+
+export async function getClientEmails(id: Client['id']) {
+  try {
+    const { data } = await api(`/client/${id}/emails`)
+    const result = clientEmailsSchemaAPI.safeParse(data)
+    if (result.success) {
+      return result.data
+    }
+    throw Error('Error al consultar los correos')
+  } catch (error) {
+    if (isAxiosError(error)) {
+      console.log(error.response?.data)
+      throw error.response?.data
+    }
+    throw new Error('Error al consultar correos')
+  }
+}
+
+export async function addEmailToList(formData: EmailClientList) {
+  try {
+    const { email, id } = formData
+    const { data } = await api.post(`/client/${id}/emails`, { email })
+    return data
+  } catch (error) {
+    if (isAxiosError(error)) {
+      console.log(error.response?.data)
+      throw error.response?.data
+    }
+    throw new Error('Error al agregar el correo')
+  }
+}
+
+export async function deleteEmailFromList(id: number) {
+  try {
+    const { data } = await api.delete(`/client/${id}/emails`)
+    return data
+  } catch (error) {
+    if (isAxiosError(error)) {
+      console.log(error.response?.data)
+      throw error.response?.data
+    }
+    throw new Error('Error al eliminar el correo')
   }
 }

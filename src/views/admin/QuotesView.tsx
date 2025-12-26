@@ -27,7 +27,7 @@ export default function QuotesView() {
           <h1 className="lg:text-2xl text-lg font-bold text-slate-700">Cotizaciones</h1>
           <button
             onClick={() => navigate('/newQuote')}
-            className="flex items-center gap-2 bg-teal-600 text-white px-4 py-1 lg:py-2 rounded-lg hover:bg-teal-700 transition">
+            className="flex justify-center items-center gap-2 bg-teal-600 text-white px-4 py-1 lg:py-2 rounded-lg hover:bg-teal-700 transition">
             <FiPlus size={18} />
             Nueva Cotización
           </button>
