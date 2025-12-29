@@ -17,6 +17,7 @@ export default function DownloadQuotePdfModal() {
   const client = state.client;
   const client_id = state.client_id;
   const email = state.email;
+  const [attachmentType, setAttachmentType] = useState(0);
 
   const { data: emailList } = useQuery({
     queryKey: ["clientEmails", client_id],
@@ -54,14 +55,15 @@ export default function DownloadQuotePdfModal() {
   };
 
   const handleToggleEmail = (emailAddress: string) => {
-     setSelectedEmails((prev) =>
-       prev.includes(emailAddress)
-         ? prev.filter((e) => e !== emailAddress)
-         : [...prev, emailAddress]
-     );
-   };
+    setSelectedEmails((prev) =>
+      prev.includes(emailAddress)
+        ? prev.filter((e) => e !== emailAddress)
+        : [...prev, emailAddress]
+    );
+  };
 
   const handleToggleAll = () => {
+
     if (emailList) {
       if (selectedEmails.length === emailList.length) {
         setSelectedEmails([]);
@@ -73,19 +75,20 @@ export default function DownloadQuotePdfModal() {
   };
 
   const handleSendEmail = () => {
+    if (attachmentType === 0)  return toast.warning("Debe Elegir el tipo de ajunto")
     const allEmails = [email, ...selectedEmails];
-   const data = {
-     id: +id,
-     client,
-     emails: allEmails, // Un solo array con todos los destinatarios
-   };
-
-   mutate(data)
+    const data = {
+      id: +id,
+      client,
+      emails: allEmails,
+      attachmentType
+    };
+    mutate(data)
   };
 
   return (
     <div className="fixed inset-0 flex items-start justify-center bg-black/70 z-50 overflow-y-auto px-5">
-      <div className="bg-white rounded-xl shadow-lg w-full max-w-lg mt-20 p-6 flex flex-col max-h-[90vh] relative">
+      <div className="bg-white rounded-xl shadow-lg w-full max-w-lg mt-20 p-6 flex flex-col relative mb-10">
 
         <button
           onClick={() => navigate(-1)}
@@ -120,11 +123,55 @@ export default function DownloadQuotePdfModal() {
                   </div>
 
                   {/* main email */}
-                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
-                    <p className="text-sm font-medium text-blue-900 mb-1">
+                  <div className="bg-blue-50 border border-blue-100 rounded-lg p-3">
+                    <p className="text-sm font-medium text-gray-700 mb-1">
                       Correo principal
                     </p>
-                    <p className="text-sm text-blue-700">{email}</p>
+                    <p className="text-sm text-gray-700">{email}</p>
+                  </div>
+                  {/* Attach file options */}
+                  <div className="p-2 text-gray-700 text-sm border rounded-lg border-blue-100">
+                    <span>
+                      Seleccionar adjuntos para:
+                    </span>
+                    <div className="flex flex-row items-center gap-4 justify-center mt-2">
+                      <label className="flex items-center gap-1 text-gray-700 cursor-pointer">
+                        <input
+                          type="radio"
+                          name="attachmentType"
+                          value={1}
+                          checked={attachmentType === 1}
+                          onChange={() => setAttachmentType(1)}
+                          className="text-teal-600 focus:ring-teal-600"
+                        />
+                        Productos
+                      </label>
+
+                      <label className="flex items-center gap-1 text-gray-700 cursor-pointer">
+                        <input
+                         type="radio"
+                          name="attachmentType"
+                          value={2}
+                          checked={attachmentType === 2}
+                          onChange={() => setAttachmentType(2)}
+                          className="text-teal-600 focus:ring-teal-600"
+                        />
+                        Servicios
+                      </label>
+
+                      <label className="flex items-center gap-1 text-gray-700 cursor-pointer">
+                        <input
+                          type="radio"
+                          name="attachmentType"
+                          value={3}
+                          checked={attachmentType === 3}
+                          onChange={() => setAttachmentType(3)}
+                          className="text-teal-600 focus:ring-teal-600"
+                        />
+                        Productos y Servicios
+                      </label>
+                    </div>
+
                   </div>
 
                   {/* email list */}
@@ -139,8 +186,8 @@ export default function DownloadQuotePdfModal() {
                           className="text-sm text-teal-600 hover:text-teal-700 font-medium"
                         >
                           {selectedEmails.length === emailList.length
-                            ? "Deseleccionar todos"
-                            : "Seleccionar todos"}
+                            ? "Desmarcar todos"
+                            : "Marcar todos"}
                         </button>
                       </div>
 
@@ -169,7 +216,7 @@ export default function DownloadQuotePdfModal() {
                   <button
                     onClick={handleSendEmail}
                     disabled={isPending}
-                    className="flex items-center justify-center gap-3 bg-teal-600 hover:bg-teal-700 text-white px-4 py-3 rounded-lg text-center font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg text-center font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <span className="text-2xl">
                       <RiMailSendLine />
