@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import { useAttachmentById } from "../../../hooks/UseAttachment";
 import Spinner from "../../shared/Spinner";
 
+const URL_BACKEND = import.meta.env.VITE_API_URL_FILE
 export default function EditAttachmentModal() {
   const navigate = useNavigate();
   const queryClient = useQueryClient();
@@ -106,7 +107,7 @@ export default function EditAttachmentModal() {
                 <p className="text-sm text-gray-600">
                   <strong>Archivo actual:</strong>{" "}
                   <a
-                    href={data.url}
+                    href={URL_BACKEND+data.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:underline"
