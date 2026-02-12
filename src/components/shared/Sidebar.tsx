@@ -13,7 +13,7 @@ export default function Sidebar({ setOpen, open }: SidebarProps) {
     const navigate = useNavigate()
     const queryClient = useQueryClient()
     const menuItems = [
-        { name: "Cotizaciones", path: "quotes", icon: <FiFileText size={20} /> },
+        { name: "Cotizaciones", path: "", icon: <FiFileText size={20} /> },
         { name: "Productos", path: "products", icon: <FiPackage size={20} /> },
         { name: "Clientes", path: "clients", icon: <FiUsers size={20} /> },
         { name: "Adjuntos", path: "attachments", icon: <FiPaperclip size={20} /> },

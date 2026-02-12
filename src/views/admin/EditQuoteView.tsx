@@ -85,7 +85,7 @@ export default function EditQuoteView() {
             setNotes("")
             queryClient.invalidateQueries({ queryKey: ["quotes"] })
             mutateSearchClient.reset()
-            navigate('/quotes')
+            navigate('/')
             navigate('?modalQuoteDownload=true', {
                 state: {
                     id: data.quoteId,
@@ -105,7 +105,7 @@ export default function EditQuoteView() {
             setNotes("")
             queryClient.invalidateQueries({ queryKey: ["quotes"] })
             mutateSearchClient.reset()
-            navigate('/quotes')
+            navigate('/')
         }
     })
 

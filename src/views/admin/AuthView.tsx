@@ -1,4 +1,4 @@
-import { FiPlus } from "react-icons/fi";
+import { FiPlus, FiKey } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { getUsers, toggleUserStatus } from "../../api/AuthAPI";
@@ -52,6 +52,10 @@ export default function AuthView() {
                         <div className="mt-2 sm:mt-0 flex flex-col sm:flex-row sm:items-center gap-4 text-sm text-gray-600">
 
                             <span>{user.isAdmin ? "Admin" : "Aux"}</span>
+                            <button 
+                                onClick={() => navigate(`?updatePasswordModal=true&userId=${user.id}`)}
+                                className="font-bold bg-gray-500 text-white py-0.5 px-3 rounded-lg cursor-pointer"
+                            ><FiKey/></button>
                             <div className="space-x-3">
                                 <button
                                     onClick={() => navigate(`?updateUserModal=true&userId=${user.id}`)}

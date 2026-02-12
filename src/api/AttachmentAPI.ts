@@ -104,3 +104,16 @@ export async function toggleAttachmentActive(id: Attachment['id']) {
         throw new Error('Error al actualizar el adjunto');
     }
 }
+
+export async function deleteAttachment(id:number) {
+    try {
+        const {data} = await api.delete(`/quote-attachment/${id}`)
+        return data
+    } catch (error) {
+        if (isAxiosError(error)) {
+            console.log(error.response?.data);
+            throw error.response?.data;
+        }
+        throw new Error('Error al eliminar el adjunto');
+    }
+}

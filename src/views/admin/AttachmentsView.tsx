@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Spinner from "../../components/shared/Spinner";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { toggleAttachmentActive } from "../../api/AttachmentAPI";
+import { deleteAttachment, toggleAttachmentActive } from "../../api/AttachmentAPI";
 import { toast } from "react-toastify";
 
 const URL_BACKEND = import.meta.env.VITE_API_URL_FILE
@@ -18,10 +18,10 @@ export default function AttachmentsView() {
   
   const { mutate } = useMutation({
     mutationFn: toggleAttachmentActive,
-    onError: (error: any) => {
+    onError: (error) => {
       toast.error(error.message || "Error al cambiar el estado del adjunto");
     },
-    onSuccess: (data: any) => {
+    onSuccess: (data) => {
       toast.success(data.message || "Estado actualizado correctamente");
       queryClient.invalidateQueries({ queryKey: ["attachments"] });
     },
@@ -32,6 +32,15 @@ export default function AttachmentsView() {
     2: "Servicio",
     3: "Productos y Servicios"
   };
+
+  const handleMutationDeleteAttachment = useMutation({
+    mutationFn:deleteAttachment,
+    onError:(data)=> toast.error(data.message),
+    onSuccess:(data)=>{
+      toast.success(data.message)
+      queryClient.invalidateQueries({ queryKey: ["attachments"] });
+    }
+  })
 
   
 
@@ -133,6 +142,10 @@ export default function AttachmentsView() {
                         />
                       </button>
                     </div>
+                    <button
+                      onClick={()=>handleMutationDeleteAttachment.mutate(attachment.id)}
+                     className="bg-red-300 px-2 rounded-lg text-sm text-gray-900 py-0.5 cursor-pointer"
+                    >Eliminar</button>
                   </div>
                 </div>
               </div>

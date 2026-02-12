@@ -22,4 +22,5 @@ export const usersSchemaAPI = z.array(userSchemaAPI)
 export type FormNewUser = Pick<User, "username"|"email"|"password"|"isAdmin"|"confirmPassword">
 export type UserLogin = Pick<User, "email"|"password">
 export type ForgotPassword = Pick<User, "email">
-export type UpdateUser = Pick<User, "username"|"email"|"isAdmin">
+export type UpdateUser = Pick<User, "username"|"email"|"isAdmin" >
+export type UpdatePassword = Pick<User,"password" | "confirmPassword" >

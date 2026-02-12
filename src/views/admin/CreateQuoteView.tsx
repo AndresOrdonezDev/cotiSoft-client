@@ -69,7 +69,8 @@ export default function CreateQuoteView() {
         state: {
           id: data.quoteId,
           client: mutateSearchClient.data?.fullname,
-          email: mutateSearchClient.data?.email
+          email: mutateSearchClient.data?.email,
+          client_id:mutateSearchClient.data?.id
         }
       })
       mutateSearchClient.reset()

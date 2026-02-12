@@ -23,7 +23,7 @@ export default function Router() {
 
                 <Route element={<AdminLayout />}>
                     <Route path="/" element={<DashboardView />}>
-                        <Route path="quotes" element={<QuotesView />} />
+                        <Route index element={<QuotesView />} />
                         <Route path="clients" element={<ClientsView />} />
                         <Route path="products" element={<ProductsView />} />
                         <Route path="attachments" element={<AttachmentsView />} />
@@ -35,7 +35,7 @@ export default function Router() {
                 </Route>
 
 
-                <Route element={<AuthLayout />}>
+                <Route  element={<AuthLayout />}>
                     <Route path="/login" element={<LoginView />} index />
                     <Route path="/forgot-password/:email/:token" element={<ForgotPasswordView />} index />
                 </Route>

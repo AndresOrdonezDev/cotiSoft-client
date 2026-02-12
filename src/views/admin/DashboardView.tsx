@@ -39,6 +39,7 @@ export default function DashboardView() {
     //user
     showModalNewUser: query.has("modalNewUser"),
     showModalUpdateUser: query.has("updateUserModal"),
+    showModalUpdatePassword:query.has("updatePasswordModal"),
     userId: query.get("userId"),
   };
 

@@ -13,7 +13,7 @@ export default function LoginView() {
     mutationFn: login,
     onError: (data) => { toast.error(data.message,{toastId:"errorLogin"}) },
     onSuccess: (data) => {
-      navigate("/quotes")
+      navigate("/")
       localStorage.setItem('token-cotisoft', data)
     }
   })

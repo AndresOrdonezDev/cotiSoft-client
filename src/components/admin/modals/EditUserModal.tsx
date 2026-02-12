@@ -113,13 +113,14 @@ export default function EditUserModal() {
                   required: "El correo electrónico es obligatorio",
                 })}
               />
+
               {errors.email && (
                 <p className="bg-red-200 rounded-lg text-center mt-3 font-semibold text-sm text-red-500">
                   {errors.email.message}
                 </p>
               )}
             </div>
-
+            
             {/* Campo: isAdmin */}
             <div className="flex items-center gap-2">
               <input
